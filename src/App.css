@@ -1,0 +1,563 @@
+
+/*.App {*/
+  /*text-align: center;*/
+
+/*}*/
+*{
+    padding:0 0 0 0;
+    margin:0 0 0 0 ;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 20001; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 100px; /* Place content 60px from the top */
+    margin-top: 50px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the Sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav ul{
+    background-color: darkgray;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: fixed;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the Sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.panel{
+  background-color:#111111;
+  color: #f1f1f1;
+
+}
+.pannel-title{
+    padding-bottom:0px;
+}
+.panel-footer{
+  background-color: #111111;
+}
+a.panel-body.dropdown-toggle{
+  font-size: medium;
+
+}
+.number{
+
+    padding-left:0px;
+    padding-right:100px;
+
+}
+.no-padding{
+  padding: 0 0 0 0;
+}
+.button1{
+  float:left;
+  background-color: cornflowerblue;
+}
+
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+
+}
+
+#page-numbers > li {
+  margin-right: 0.3em;
+
+  color: blue;
+  user-select: none;
+  cursor: pointer;
+}
+#display_index > li {
+    padding: 0 5px 0 5px;
+}
+.allign-left{
+    text-align:left;
+}
+.allign-right{
+    text-align: right;
+}
+.dropdown-menu{
+    text-size:small;
+}
+.dropdown-menu-right{
+ left:4em;
+    float: right;
+    font-size: small;
+}
+.dropdown-menu-right a {
+    font-size: medium;
+}
+.panel-collapse{
+background-color: #1d1d1d;
+}
+.border{
+    border-top: 2px solid #111111;
+    background-color: darkgrey;
+}
+
+.padding-top-30{
+    padding-top:80px;
+    background-color: darkgray;
+    padding-left: 15px;
+}
+div .col-md-3{
+    width:450px;
+
+}
+
+.question{
+    font-size:large;
+}
+
+.pagenum{
+  background-color:lightgrey;
+
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.greenColor{
+color: green;
+    margin:5px;
+    padding:5px;
+}
+.redColor{
+color:red;
+    margin:5px;
+    padding:5px;
+}
+.ansColor{
+    margin:5px;
+    padding:5px;
+}
+.carousel {
+    width:100%;
+    height:100%;
+
+
+
+}
+a.navbar-brand{
+    font-size:larger;
+
+}
+/*.navbar{*/
+    /*position: fixed;*/
+    /*width:100%;*/
+    /*height:50px;*/
+
+/*}*/
+
+.container{
+    width:100%;
+
+}
+.text{
+    text-decoration-color: #f1f1f1;
+}
+
+
+.well.well-lg.exam{
+   padding: 500px 0px 500px 0px;
+}
+
+p.renderQuestion{
+    font-size:25px;
+    font-weight: bold;
+    background-color: darkgrey;
+}
+p{
+    font-size: smaller;
+    background-color: darkgrey;
+    float-wrap: wrap;
+}
+.button .btn .btn-primary .prev{
+    padding-left: 50px;
+}
+
+.styleButton{
+    font-size:x-large;
+    width:30px;
+}
+.styleCurrentButton{
+    background-color: #798b1a;
+    font-size: large;
+}
+.renderQuestion{
+    padding-top:200px;
+
+}
+
+
+
+/*body{*/
+    /*background-image: url('aws.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
+/*LOGIN FORM*/
+
+
+/*Exam mode Sets*/
+h2{
+    float:left;
+    scroll-padding-inline: 100px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+div.answer{
+    float:left;
+}
+button{
+    padding-top: 20px;
+
+}
+.btn.btn-success{
+    width:100px;
+    height:50px;
+}
+.footer{
+    float: left;
+    text-align: center;
+    width: 1000px;
+
+    text-decoration-color: Green;
+}
+
+
+
+
+.color{
+    padding: 0px 0px 0px 0px;
+
+}
+
+/*testmodule*/
+.here{
+    background-color:rosybrown;
+    margin-top: 61px;
+    margin-left:2px;
+}
+.image{
+    background-color: rosybrown;
+    text-align: center;
+    margin-top: 57px;
+
+}
+.btn .btn-primary{
+    padding-left:20px;
+    width:50px;
+    text-align:right;
+}
+button{
+    width:30%;
+
+}
+.grid-default{
+    height:100%;
+    background-color:rosybrown;
+}
+.btn {
+font-size: larger;
+}
+.btn.btn-success {
+    width: 150px;
+    height: 100px;
+}
+
+
+
+.btn .btn-primary .jenita{
+    padding-top: 30px;
+
+
+}
+.jenita .button .btn .btn-primary .jenita{
+    width:auto;
+}
+
+ .jenita{
+  background-color:darkgray;
+
+}
+ div .jenita ul{
+     padding-left:60px;
+ }
+div.container{
+    background-color: rosybrown;
+    padding-left:0px;
+    padding-right:0px;
+
+}
+
+
+.grid default-grid{
+    background-color: rosybrown;
+}
+img{
+    width:350px;
+    height:200px;
+}
+
+.where{
+    padding-top: 30px;
+    background-color: darkgray;
+
+}
+    /*ExamDevops*/
+.bottom-header{
+    padding-top: 100px;
+    padding-left: 10px;
+    background-color: lightgrey;
+
+}
+.answer{
+    text-align: left;
+    font-size: smaller;
+
+
+}
+.questionhere {
+ padding-top: 20px;
+
+
+
+}
+.renderque{
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align:30px;
+
+
+}
+.bg_color_white{
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.bg_color_white .renderque{
+    font-size: 30px;
+
+
+}
+.bg_color_grey .renderque {
+    font-size: 30px;
+
+}
+html{
+    background-color: darkgrey;
+}
+
+div .container-fluid{
+    background-color: black;
+}
+a.navbar-brand{
+    color:black
+}
+
+div .SubmitValue{
+    background-color: darkgrey;
+}
+div.color{
+    background-color: rosybrown;
+}
+.bottom-header{
+    background-color:darkgray;
+
+}
+/*login form*/
+:root{
+    --primaryred:#ff424f;
+    --secondaryred:#f84735;
+    --lightblack:#222b31;
+    --darkblack:#191c1f;
+    --mainfont:'Dancing Script', cursive;
+    --secondfont: 'Lato', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:var(--secondfont);
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.fullcontent{
+    width:100%;
+    min-height: 100vh;
+    height: auto;
+    padding:6% 10% 5% 10%;
+    background-image: url(aws.png);
+
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+.firstheadings{
+    /* background:red;  */
+    flex-basis: 65%;
+    margin-right: 5%;
+    margin-top:10%;
+    background:rgb(34,43,45,0.5);
+    padding-left:20px;
+    padding-bottom:20px;
+
+
+}
+.firstheadings h1{
+    font-size: 4rem;
+    font-family:var(--mainfont);
+    color:Red;
+    margin:3% 0% 3% 0%;
+
+}
+.firstheadings h2{
+    font-size:1.2rem;
+    font-weight: 300;
+    color:yellow;
+    font-weight: bold;
+
+}
+.formbox{
+    background:rgb(34,43,49,0.7);
+    color:white;
+    flex-basis: 35%;
+    border-top: 10px solid var(--secondaryred);
+    padding:2% 3%;
+}
+.formbox *{
+    margin: 0;
+}
+.formbox h3{
+    font-family: var(--mainfont);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.formbox form label{
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0.3rem;
+}
+.formbox form .asd{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    background: transparent;
+    height: 2.8rem;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+form .mainbox{
+    color: white;
+    box-shadow: none;
+    background: var(--secondaryred);
+    height: 2.8rem;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+a .mainbox{
+    margin: 0;
+    padding: 2%;
+}
+.signin{
+    margin-top:50px;
+    background-color: grey;
+
+}
+.heading--primary{
+    margin-top: 30px;
+
+}
+.signcss{
+    margin-left: 30px;
+    margin-right: 150px;
+    background-color: grey;
+}
+.form-control{
+    background-color: grey;
+}
+.signuphere{
+    text-decoration-color: red;
+}

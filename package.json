@@ -1,0 +1,26 @@
+{
+  "name": "lamic",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajax": "0.0.4",
+    "axios": "latest",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-sidebar": "latest",
+    "react-confirm-alert": "^2.0.5",
+    "react-dom": "^16.4.1",
+    "react-modal-login": "^1.2.1",
+    "react-onclickoutside": "^6.7.1",
+    "react-responsive-carousel": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "1.1.4",
+    "sweetalert": "2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
