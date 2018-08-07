@@ -5,6 +5,7 @@ import React,{Component} from 'react';
 export default class Register extends Component{
     render(){
         return(
+            <div className="down">
             <div className="signcss">
             <div className="signup">
                 <div className="container__child signup__thumbnail">
@@ -13,8 +14,8 @@ export default class Register extends Component{
                         <h1 className="logo__text">Spectre</h1>
                     </div>
                     <div className="thumbnail__content text-center">
-                        <h1 className="heading--primary">Welcome to Signup</h1>
-                        <h2 className="heading--secondary">Are you ready to join??</h2>
+                        <h1 className="heading--primary">You can directly register here!!!!</h1>
+
                     </div>
                     <div className="thumbnail__links">
                         <ul className="list-inline m-b-0 text-center">
@@ -36,7 +37,7 @@ export default class Register extends Component{
                         <div className="form-group">
                             <label htmlFor="username">Username</label>
                             <input className="form-control" type="text" name="username" id="username"
-                                   placeholder="james.bond" required/>
+                                    required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
@@ -65,6 +66,7 @@ export default class Register extends Component{
                         </div>
                     </form>
                 </div>
+            </div>
             </div>
             </div>
         )

@@ -547,17 +547,28 @@ a .mainbox{
 
 }
 .heading--primary{
-    margin-top: 30px;
+    margin-top: 60px;
+    font-weight: bolder;
 
 }
+.heading--primary h1{
+    text-decoration-color: blue;
+}
 .signcss{
-    margin-left: 30px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 200px;
     background-color: grey;
+
+}
+.label{
+    font-weight: bold;
 }
 .form-control{
-    background-color: grey;
+    background-color: white;
 }
 .signuphere{
     text-decoration-color: red;
+}
+.down{
+    background-color:darkgrey;
 }

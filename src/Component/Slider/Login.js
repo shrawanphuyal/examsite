@@ -21,9 +21,9 @@ render(){
                     <label htmlFor="">Username</label>
                     <input type="text" name="username" className="asd"/>
                     <label htmlFor="">Password</label>
-                    <input type="text"  name="password" className="asd"/>
+                    <input type="password"  name="password" className="asd"/>
                     <input id="btn" type="submit" name="submit" value="Log In" className="mainbox"/>
-                        <label htmlFor="">New customer?</label>
+
                     <a href="#/Register" ><div className="mainbox">Register Now</div>
                     </a>
                 </form>
