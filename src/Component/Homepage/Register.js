@@ -1,9 +1,122 @@
 import React,{Component} from 'react';
+import sweetAlert from 'sweetalert';
+import {CognitoUserAttribute, CognitoUserPool} from 'amazon-cognito-identity-js';
 
-
+import axios from 'axios';
+var post_api = "https://amryktmkuj.execute-api.ap-southeast-1.amazonaws.com/cog_test/cogresource";
 
 export default class Register extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            id:{
+                UserPoolId: "ap-southeast-1_vYxc8AyG3",
+                ClientId: "3l4j8kug1b16kfd4cnq96qsrk3"
+            },
+            info:''
+
+        }
+        this.signUpUser=this.signUpUser.bind(this);
+        this.onRegister=this.onRegister.bind(this);
+    }
+    signUpUser({username, password, email, fullname}){
+        console.log("SIGN UP USER...");
+        // instantiate a promise so we can work with this async easily
+        const p = new Promise((res, rej)=>{
+            setTimeout(() => {
+                // create an array of attributes that we want
+                const attributeList = [];
+                // create the attribute objects in plain JS for each parameter we want to save publically (aka NOT the password)
+                const dataEmail = {
+                    Name : 'email',
+                    Value : email
+                };
+
+                const dataName = {
+                    Name : 'name',
+                    Value : fullname
+                };
+
+                // take each attribute object and turn it into a CognitoUserAttribute object
+                const attributeEmail = new CognitoUserAttribute(dataEmail);
+
+                //const attributeUsername = new CognitoUserAttribute(dataUsername)
+                const attributeName = new CognitoUserAttribute(dataName);
+
+                // add each CognitoUserAttribute to the attributeList array
+                attributeList.push(attributeEmail, attributeName);
+                const adminUserPool = new CognitoUserPool(this.state.id);
+                console.log("about to USER...")
+                adminUserPool.signUp(username, password, attributeList, null, function(err, result){
+                    if (err) {
+                        console.log("an error occurred");
+                        console.log(err);
+
+                        rej(err)
+                    }
+                    console.log("Sgo on")
+                    res({email})
+                })
+            }, 3000);
+        });
+        return p
+    }
+    onRegister(){
+        var fullname  = document.getElementById("fullname").value;
+        var username  = document.getElementById("username").value;
+        var email  = document.getElementById("email").value;
+        var password  = document.getElementById("password").value;
+        var passwordRepeat  = document.getElementById("passwordRepeat").value;
+
+
+
+        if(fullname.length != 0 && password === passwordRepeat){
+            const user = {
+                fullname:fullname,
+                username:username,
+                email:email,
+                password:password,
+                status:"deactive"
+            };
+
+            this.signUpUser(user)
+                .then(({email})=>{
+                    sweetAlert("Successfully registered...Verify your email and Login");
+                    console.log("done signing up")
+                    this.setState({
+                        info: "Successfully registered...Verify your email and Login"
+                    });
+
+
+                })
+                .catch((err)=>{
+                    // if failure, display the error message and toggle the loading icon to disappear
+                    console.log(err);
+                    if(err['code']==="InvalidLambdaResponseException"){
+                        this.setState({
+                            info: "Email Already Used"
+                        });
+                    }
+                    else{
+                        this.setState({
+                            info: err['message']
+                        })
+                    }
+                })
+
+
+
+        }
+
+        else{
+            sweetAlert("Something Went Wrong")
+        }
+
+    }
+
+
     render(){
+
         return(
             <div className="down">
             <div className="signcss">
@@ -33,7 +146,12 @@ export default class Register extends Component{
                     <div className="signup__overlay"></div>
                 </div>
                 <div className="signup ">
-                    <form action="#">
+
+                        <div className="form-group">
+                            <label htmlFor="fullname">Full Name</label>
+                            <input className="form-control" type="text" name="fullname" id="fullname"
+                                   required/>
+                        </div>
                         <div className="form-group">
                             <label htmlFor="username">Username</label>
                             <input className="form-control" type="text" name="username" id="username"
@@ -57,14 +175,14 @@ export default class Register extends Component{
                         <div className="m-t-lg">
                             <ul className="list-inline">
                                 <li>
-                                    <input className="btn btn--form" type="submit" value="Register"/>
+                                    <input className="btn btn--form" onClick={this.onRegister} type="submit" value="Register"/>
                                 </li>
                                 <li>
                                     <a className="signuphere" href="#">I am already a member</a>
                                 </li>
                             </ul>
                         </div>
-                    </form>
+
                 </div>
             </div>
             </div>

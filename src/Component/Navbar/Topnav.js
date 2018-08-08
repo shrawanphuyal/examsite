@@ -35,9 +35,9 @@ export default class Topnav extends Component{
                 <div className="container-fluid">
                     <div className="navbar-header">
 
-                        <a className="navbar-brand"
-                           onClick={(this.state.MenuOpened)?this.openNav.bind(this):this.closeNav.bind(this)}>
-                            Menu</a>
+                        {/*<a className="navbar-brand"*/}
+                           {/*onClick={(this.state.MenuOpened)?this.openNav.bind(this):this.closeNav.bind(this)}>*/}
+                            {/*Menu</a>*/}
 
                     </div>
 
