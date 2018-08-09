@@ -3,13 +3,16 @@ import sweetAlert from 'sweetalert';
 import {CognitoUserAttribute, CognitoUserPool} from 'amazon-cognito-identity-js';
 
 import axios from 'axios';
-var post_api = "https://amryktmkuj.execute-api.ap-southeast-1.amazonaws.com/cog_test/cogresource";
 
 export default class Register extends Component{
     constructor(props){
         super(props);
         this.state={
-            id:{
+            // id:{
+            //     UserPoolId: "ap-southeast-1_GtNg9gtZb",
+            //     ClientId: "7m7g7pc3gh42ahp15cr1km7lj8"
+            // },
+            id: {
                 UserPoolId: "ap-southeast-1_GtNg9gtZb",
                 ClientId: "7m7g7pc3gh42ahp15cr1km7lj8"
             },
@@ -19,6 +22,8 @@ export default class Register extends Component{
         this.signUpUser=this.signUpUser.bind(this);
         this.onRegister=this.onRegister.bind(this);
     }
+
+
     signUpUser({username, password, email, fullname}){
         console.log("SIGN UP USER...");
         // instantiate a promise so we can work with this async easily
@@ -57,7 +62,7 @@ export default class Register extends Component{
                     console.log("Sgo on")
                     res({email})
                 })
-            }, 3000);
+            }, 1000);
         });
         return p
     }
