@@ -34,8 +34,8 @@ class Login extends Component{
             data: {},
             adminids: '',
             id: {
-                UserPoolId: "ap-southeast-1_aGIfDt4uM",
-                ClientId: "2b9l4bif4cj805q4j9vrkp2tee"
+                UserPoolId: "ap-southeast-1_GtNg9gtZb",
+                ClientId: "7m7g7pc3gh42ahp15cr1km7lj8"
             }
         };
         this.handleChange=this.handleChange.bind(this);

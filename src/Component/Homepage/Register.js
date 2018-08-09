@@ -10,8 +10,8 @@ export default class Register extends Component{
         super(props);
         this.state={
             id:{
-                UserPoolId: "ap-southeast-1_vYxc8AyG3",
-                ClientId: "3l4j8kug1b16kfd4cnq96qsrk3"
+                UserPoolId: "ap-southeast-1_GtNg9gtZb",
+                ClientId: "7m7g7pc3gh42ahp15cr1km7lj8"
             },
             info:''
 
@@ -182,6 +182,7 @@ export default class Register extends Component{
                                 </li>
                             </ul>
                         </div>
+                    <h3>{this.state.info}</h3>
 
                 </div>
             </div>

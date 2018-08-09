@@ -1,0 +1,42 @@
+.dashtop{
+    margin-top:180px;
+    margin-bottom: 400px;
+background-color: darkgrey;
+}
+.formb{
+    margin-left: 250px;
+    margin-bottom:250px;
+    margin-right: 250px;
+}
+.mainr{
+background-color:green;
+font-size:xx-large;
+}
+.abc{
+font-weight: bolder;
+}
+label{
+font-weight:bolder;
+}
+.login{
+font-weight:bold;
+}
+
+html{
+    height:100%;
+}
+.col-lg-4 {
+    float: right;
+    margin-right: 50px;
+
+}
+.statush{
+    float:right;
+}
+.margin-top{
+    margin-top: 200px;
+}
+.usertable{
+    margin-left:80px;
+    margin-right:80px;
+}

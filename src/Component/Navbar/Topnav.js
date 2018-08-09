@@ -42,7 +42,7 @@ export default class Topnav extends Component{
                     </div>
 
                     <ul className="nav navbar-nav navbar-right">
-                        <li><a href="#AdminDashboard"><span className="glyphicon glyphicon-user"></span> Admin</a></li>
+                        <li><a href="#Admin/AdminLogin"><span className="glyphicon glyphicon-user"></span> Admin</a></li>
 
                         <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
