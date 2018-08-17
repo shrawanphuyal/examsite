@@ -10,10 +10,10 @@ export default class AdminLogin extends Component{
                 <hr/>
                 <br/>
                 <form id="form" action="" >
-                    <label htmlFor="">Username</label>
+                    <label htmlFor="">Email</label>
                     <br/>
 
-                    <input type="text" name="username" className="abc"/>
+                    <input type="email" name="email" className="abc"/>
                     <br/>
                     <br/>
                     <label htmlFor="">Password</label>

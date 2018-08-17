@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Sidenav from './Component/Sidenav/Sidenav';
 import Topnav from "./Component/Navbar/Topnav";
-import Topnav1 from "./Component/Navbar/Topnav1";
+import TopnavFinal from "./Component/Navbar/TopnavFinal";
+import TopnavInactiveUser from "./Component/Navbar/TopnavInactiveUser";
+
 import {HashRouter as Router,Route, Redirect, Link} from 'react-router-dom';
 
 
@@ -21,6 +23,7 @@ import ExamSolArch from "./Component/Exammode/Questions/ExamSolArch";
 import Homepage from './Component/Homepage/Home';
 import LoggedinHome from './Component/Slider/LoggedinHome';
 import Login from './Component/Slider/Login';
+import ChangePwdHome from './Component/Slider/ChangePwdHome';
 import AuthExample from './Component/Slider/AuthExample'
 
 // import all the Test Module here
@@ -37,7 +40,7 @@ import ExammoduleSolArch from "./Component/Exammode/Modules/ExammoduleSolArch";
 import Register from "./Component/Homepage/Register";
 import AdminDashboard from "./Component/Homepage/AdminDashboard";
 import AdminLogin from "./Component/Admin/AdminLogin";
-
+import Admin from './Component/test/Admin2'
 
 const PrivateRoute = ({component: Component, ...rest}) => (
     <Route {...rest} render = {(props) => (
@@ -52,15 +55,15 @@ class App extends Component {
             <Router>
               <div>
                 <div className="App">
-                    {
-                        (localStorage.getItem('admin') === "true")?<Topnav1/>:<Topnav/>
-                    }
+                    <TopnavFinal/>{/*{*/}
 
 
                     <Sidenav/>
 
                     <div>
+
                         <Route exact path="/login" component={Login}/>
+                        <Route exact path="/changepwd" component={ChangePwdHome}/>
                         <PrivateRoute exact path = "/loggedin" component={LoggedinHome}/>
                         {/*<PrivateRoute exact path = "#" component = {Topnav}/>*/}
                         {/*<PrivateRoute exact path = "#" component = {Sidenav}/>*/}
@@ -95,6 +98,7 @@ class App extends Component {
                 </div>
 
                 {/*<AuthExample/>*/}
+                  {/*<Admin/>*/}
                 </div>
 
             </Router>

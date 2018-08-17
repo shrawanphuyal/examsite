@@ -7,7 +7,7 @@ import sweetAlert from "sweetalert";
 
 import {AuthenticationDetails, CognitoUser, CognitoUserPool} from "amazon-cognito-identity-js";
 var fetchAdmin = "https://amryktmkuj.execute-api.ap-southeast-1.amazonaws.com/cog_test/cogresource";
-
+var fetchUser = "https://amryktmkuj.execute-api.ap-southeast-1.amazonaws.com/user_det_fetch/cog-userdetails"
 
 class Login extends Component{
 
@@ -15,6 +15,7 @@ class Login extends Component{
         super(props);
         this.state = {
             admins:[],
+            users:{},
             username: '',
             password: '',
             info: '',
@@ -35,6 +36,7 @@ class Login extends Component{
     }
 
     componentDidMount(){
+        //fetch admin details
         axios.get(fetchAdmin, {
             params: {
 
@@ -44,6 +46,20 @@ class Login extends Component{
                 // console.log(response.data);
                 this.setState({
                     admins:response.data
+                })
+            })
+            .catch(error => {
+            });
+        //fetch user details
+        axios.get(fetchUser, {
+            params: {
+
+            }
+        })
+            .then(response => {
+                console.log(response.data);
+                this.setState({
+                    users:response.data
                 })
             })
             .catch(error => {
@@ -163,7 +179,7 @@ class Login extends Component{
 
     handleSubmit(event){
         event.preventDefault();
-        sweetAlert("Logging in... please wait!!!")
+       // sweetAlert("Logging in... please wait!!!")
         localStorage.setItem("admin", "true");
         this.setState({
             info: "Logging in..Please Wait!!"
@@ -181,6 +197,7 @@ class Login extends Component{
                     .then(({result})=>{
 
                         localStorage.setItem("admin", "true");
+
                         localStorage.setItem("adminname", this.state.username)
                         console.log("done signing in")
                         this.setState({
@@ -210,7 +227,17 @@ class Login extends Component{
                 })
                     .then(({result})=>{
 
-                        localStorage.setItem("admin", "true");
+
+                        for(var i =0;i<this.state.users.length;i++){
+                            if(this.state.users[i]["username"] == this.state.username && this.state.users[i]["status"] == "active"){
+                                localStorage.setItem("activeUser","true");
+                                break;
+                            }
+                            else{
+                                localStorage.setItem("activeUser","false");
+                            }
+
+                        }
                         localStorage.setItem("adminname", this.state.username)
                         console.log("done signing in")
                         this.setState({
@@ -243,12 +270,13 @@ class Login extends Component{
 
                     <h1>AWS EXAM PORTAL</h1>
                     <h2>We provides you better way of preparation for the Aws examination.Different types of question sets are provided to make you ready for the examination.</h2>
+                    <a href="#changepwd">Change pwd</a>
                 </div>
                 <div className="formbox">
                     <h3>Log In</h3>
                     <div className="form">
 
-                        <label htmlFor="">Username</label>
+                        <label htmlFor="">Email</label>
                         <input
                             value={this.state.username}
                             onChange={(event) => this.handleChange(event)}

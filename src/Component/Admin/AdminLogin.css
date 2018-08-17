@@ -34,9 +34,74 @@ html{
     float:right;
 }
 .margin-top{
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .usertable{
-    margin-left:80px;
-    margin-right:80px;
+    margin-left:90px;
+    margin-right:100px;
+}
+.outline{
+border-color: green;
+}
+.text{
+    font-weight:bolder;
+    background-color: black;
+   color: black;
+}
+.filter button{
+  text-align: green;
+    margin-right: 20px;
+}
+
+.userinfo{
+    padding-right:50px;
+padding-left:50px;
+}
+.edit{
+    margin-left:25px;
+
+}
+.ok{
+    margin-left:25px;
+}
+.envelope{
+    margin-left:25px;
+   margin-right:0px;
+}
+.list{
+    margin-left:30px;
+}
+.firstname{
+    font-weight: bolder;
+}
+.filter button{
+    color: white;
+    background-color:green ;
+    font-weight: bolder;
+
+}
+.add{
+    background-color: green;
+    color:white;
+    font-weight: bolder;
+}
+h2{
+    font-weight:bolder;
+}
+.listofuser{
+    padding-top: 150px;
+    padding-left: 90px;
+}
+.inactive{
+    float:right;
+    width:350px;
+}
+.black{
+    width:350px;
+    height:150px;
+    background-color: black;
+
+}
+ button.btn.btn-default.black{
+    background-color: black;
 }

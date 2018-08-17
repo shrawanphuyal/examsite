@@ -1,52 +1,15 @@
 import React,{Component} from 'react';
+import '../Admin/AdminLogin.css'
 
 
 
-
-export default class Topnav extends Component{
-    constructor(props) {
-        super(props);
-        this.openNav = this.openNav.bind(this);
-        this.state = {
-            MenuOpened: true
-        }
-
-    }
-    openNav()
-        {
-
-            document.getElementById("mySidenav").style.width = "250px";
-            this.setState({
-                MenuOpened: false
-            })
-        }
-        closeNav()
-        {
-            document.getElementById("mySidenav").style.width = "0px";
-            this.setState({
-                MenuOpened:true
-            })
-        }
-
-
-        render(){
+export default class TopnavBefore extends Component{
+    render(){
         return(
-            <nav className="navbar navbar-inverse navbar-fixed-top">
-                <div className="container-fluid">
-                    <div className="navbar-header">
+            <nav className="navbar navbar-inverse navbar-fixed-top text">
 
-                        {/*<a className="navbar-brand"*/}
-                           {/*onClick={(this.state.MenuOpened)?this.openNav.bind(this):this.closeNav.bind(this)}>*/}
-                            {/*Menu</a>*/}
+                <h1>WELCOME TO AWS EXAM PORTAL, YOU MUST LOGIN TO USE OUR RESOURCES</h1>
 
-                    </div>
-
-                    <ul className="nav navbar-nav navbar-right">
-                        <li><a href="#Admin/AdminLogin"><span className="glyphicon glyphicon-user"></span> Admin</a></li>
-
-                        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
             </nav>
 
         );

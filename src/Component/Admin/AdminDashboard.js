@@ -6,33 +6,52 @@ export default class AdminDashboard extends Component{
     <div className="row margin-top">
         <div className="usertable">
                     <div className="col-md-8">
-                <div className="containertable">
-                    <h2>LIST OF USERS</h2>
+                <div className="containertable outline">
+                    <h2 classname="user">LIST OF ACTIVE USERS</h2>
                     <table className="table table-bordered">
                         <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th className="firstname">Firstname</th>
+                            <th className="firstname">Lastname</th>
+                            <th className="firstname">Email</th>
+                            <th className="firstname">Status</th>
+                            <th className="firstname">Action</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="list">
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
                             <th></th>
                             <a href="#">
-                                <span className="glyphicon glyphicon-ok"></span>
+                                <span className="glyphicon glyphicon-ok ok "></span>
                             </a>
 
                                 <a href="#">
-                                    <span className="glyphicon glyphicon-edit"></span>
+                                    <span className="glyphicon glyphicon-edit edit"></span>
                                 </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-envelope envelope"></span>
+                            </a>
 
 
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th></th>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-ok ok"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-edit edit"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-envelope envelope"></span>
+                            </a>
                         </tr>
                         <tr>
                             <td></td>
@@ -40,59 +59,171 @@ export default class AdminDashboard extends Component{
                             <td></td>
                             <th></th>
                             <a href="#">
-                                <span className="glyphicon glyphicon-ok"></span>
-                            </a>
-                            <a href="#">
-                                <span className="glyphicon glyphicon-edit"></span>
-                            </a>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <th></th>
-                            <a href="#">
-                                <span className="glyphicon glyphicon-ok"></span>
+                                <span className="glyphicon glyphicon-ok ok"></span>
                             </a>
 
                             <a href="#">
-                                <span className="glyphicon glyphicon-edit"></span>
+                                <span className="glyphicon glyphicon-edit edit"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-envelope envelope"></span>
                             </a>
                         </tr>
 
 
                         </tbody>
                     </table>
+                    <div className="col-xs-4 search">
+                        <h3>Search by:</h3> <label htmlFor="Email">Email:</label>
 
-                        <h3>Search by:</h3>
-                        <label htmlFor="Email">Email:</label>
-                        <input className="form-control" type="text" name="Email" id="Email"
+
+
+                        <input className="form-control outline" type="text" name="Email" id="Email" maxLength="20" placeholder="Search by email"
                                required/>
+                    </div>
+                    <br/>
                     <label htmlFor="Status">Status:</label>
                         <select name="Status">
-                            <option value="">Select an option...</option>
+                            <option value="">Search by option...</option>
                             <option value="active">Active</option>
+                            <hr/>
                             <option value="pending">Pending</option>
+                            <hr/>
                             <option value="locked">Locked</option>
                         </select>
                     <br/>
-                    <button type="filter">Filter</button><button type="filter">Reset</button>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div className="filter  ">
+                    <button type="filter">Filter</button><button type="filter ">Reset</button>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div className="filter inactive">
+                        <button type="filter">Make Inactive</button>
                     </div>
                 </div>
+                </div>
     </div>
-                        <div className="col-md-4 userinfo">
-                            <h2>ADD USERS</h2>
+
+        <div className="usertablelist margin-top">
+            <div className="col-md-8">
+                <div className="containertable outline listofuser">
+                    <h2 className="user">LIST OF INACTIVE USERS</h2>
+                    <table className="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th className="firstname">Firstname</th>
+                            <th className="firstname">Lastname</th>
+                            <th className="firstname">Email</th>
+                            <th className="firstname">Status</th>
+                            <th className="firstname">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody className="list">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th></th>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-ok ok "></span>
+                            </a>
+
+                            <a href="#">
+                                <span className="glyphicon glyphicon-edit edit"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-envelope envelope"></span>
+                            </a>
+
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th></th>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-ok ok"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-edit edit"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-envelope envelope"></span>
+                            </a>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <th></th>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-ok ok"></span>
+                            </a>
+
+                            <a href="#">
+                                <span className="glyphicon glyphicon-edit edit"></span>
+                            </a>
+                            <a href="#">
+                                <span className="glyphicon glyphicon-envelope envelope"></span>
+                            </a>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                    <div className="col-xs-4 search">
+                        <h3>Search by:</h3> <label htmlFor="Email">Email:</label>
+
+
+                        <input className="form-control outline" type="text" name="Email" id="Email" maxLength="20"
+                               placeholder="Search by email"
+                               required/>
+                    </div>
+                    <br/>
+                    <label htmlFor="Status">Status:</label>
+                    <select name="Status">
+                        <option value="">Search by option...</option>
+                        <option value="active">Active</option>
+                        <hr/>
+                        <option value="pending">Pending</option>
+                        <hr/>
+                        <option value="locked">Locked</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div className="filter  ">
+                        <button type="filter">Filter</button>
+                        <button type="filter ">Reset</button>
+                        <br/>
+                        <br/>
+                    </div>
+                    <div className="filter inactive">
+                        <button type="filter">Make Active</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="col-md-4 userinfo">
+                            <h2 className="user">ADD USERS</h2>
                             <br/>
                             <form action="#">
                                 <div className="form-group">
-                                    <label htmlFor="username">Username</label>
-                                    <input className="form-control" type="text" name="username" id="username"
-                                           required/>
+                                    <label htmlFor="username">Firstname</label>
+                                    <input className="form-control outline" type="text" name="username" id="username"
+                                           placeholder="Enter firstname" required/>
                                     <label htmlFor="lastname"> Lastname</label>
-                                    <input className="form-control" type="text" name="lastname" id="lastname" required/>
+                                    <input className="form-control outline" type="text" name="lastname" id="lastname" placeholder="Enter lastname"required/>
 
                                     <label htmlFor="email">Email</label>
-                                    <input className="form-control" type="text" name="email" id="email"
+                                    <input className="form-control outline" type="text" name="email" id="email" placeholder="Enter email"
                                            required/>
                                     <label htmlFor="email">Country</label>
                                     <br/>
@@ -347,9 +478,9 @@ export default class AdminDashboard extends Component{
                                         <option value="ZW">Zimbabwe</option>
                                     </select>
 
-                                    <ul className="list-inline">
+                                    <ul className="list-inline outline">
                                         <li>
-                                            <input className="btn btn--form" type="submit" value="Send Email"/>
+                                            <input className="btn btn--form add" type="submit" value="Add"/>
                                         </li>
 
                                     </ul>

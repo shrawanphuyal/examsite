@@ -5,6 +5,7 @@ import axios from "axios/index";
 import sweetAlert from "sweetalert";
 // import ExamDevOps from "../Exammode/Modules/ExammoduleSolArch";
 
+import Topnav1 from '../Navbar/TopnavFinal'
 import {AuthenticationDetails, CognitoUser, CognitoUserPool} from "amazon-cognito-identity-js";
 var get_api = "https://n76ejhg4t3.execute-api.ap-southeast-1.amazonaws.com/fetch_userdata/fetchuserdata";
 
@@ -138,7 +139,9 @@ export default class LoggedinHome extends Component{
     render(){
         let submit=this.handleSubmit.bind();
         return(
+
             <div className="fullcontent">
+                <Topnav1/>
                 <div className="firstheadings">
 
                     <h1>AWS EXAM PORTAL</h1>

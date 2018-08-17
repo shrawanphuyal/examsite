@@ -8,10 +8,6 @@ export default class Register extends Component{
     constructor(props){
         super(props);
         this.state={
-            // id:{
-            //     UserPoolId: "ap-southeast-1_GtNg9gtZb",
-            //     ClientId: "7m7g7pc3gh42ahp15cr1km7lj8"
-            // },
             id: {
                 UserPoolId: "ap-southeast-1_GtNg9gtZb",
                 ClientId: "7m7g7pc3gh42ahp15cr1km7lj8"

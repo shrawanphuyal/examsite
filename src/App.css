@@ -572,3 +572,13 @@ a .mainbox{
 .down{
     background-color:darkgrey;
 }
+
+.mar-to-13{
+    color:red;
+    margin-top:13px;
+}
+
+.formbox-pwd{
+    display:block;
+    margin:0 auto;
+}
