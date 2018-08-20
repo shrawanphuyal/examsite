@@ -38,7 +38,7 @@ import ExammoduleSolArch from "./Component/Exammode/Modules/ExammoduleSolArch";
 
 
 import Register from "./Component/Homepage/Register";
-import AdminDashboard from "./Component/Homepage/AdminDashboard";
+import AdminDashboard from "./Component/Admin/AdminDashboard";
 import AdminLogin from "./Component/Admin/AdminLogin";
 import Admin from './Component/test/Admin2'
 
@@ -90,7 +90,7 @@ class App extends Component {
 
                         <Route exact path='/' component={Homepage}/>
                         <Route exact path="/Register" component={Register}/>
-                        <PrivateRoute exact path="/Admin/AdminLogin/AdminDashboard" component={AdminDashboard}/>
+                        <PrivateRoute exact path="/Admin/AdminDashboard" component={AdminDashboard}/>
                         <Route exact path="/Admin/AdminLogin" component={AdminLogin}/>
                     </div>
 

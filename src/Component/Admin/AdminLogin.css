@@ -1,7 +1,7 @@
 .dashtop{
     margin-top:180px;
     margin-bottom: 400px;
-background-color: darkgrey;
+    background-color: darkgrey;
 }
 .formb{
     margin-left: 250px;
@@ -9,17 +9,17 @@ background-color: darkgrey;
     margin-right: 250px;
 }
 .mainr{
-background-color:green;
-font-size:xx-large;
+    background-color:green;
+    font-size:xx-large;
 }
 .abc{
-font-weight: bolder;
+    font-weight: bolder;
 }
 label{
-font-weight:bolder;
+    font-weight:bolder;
 }
 .login{
-font-weight:bold;
+    font-weight:bold;
 }
 
 html{
@@ -41,21 +41,21 @@ html{
     margin-right:100px;
 }
 .outline{
-border-color: green;
+    border-color: green;
 }
 .text{
     font-weight:bolder;
     background-color: black;
-   color: black;
+    color: black;
 }
 .filter button{
-  text-align: green;
+    text-align: green;
     margin-right: 20px;
 }
 
 .userinfo{
     padding-right:50px;
-padding-left:50px;
+    padding-left:50px;
 }
 .edit{
     margin-left:25px;
@@ -66,7 +66,7 @@ padding-left:50px;
 }
 .envelope{
     margin-left:25px;
-   margin-right:0px;
+    margin-right:0px;
 }
 .list{
     margin-left:30px;
@@ -102,6 +102,11 @@ h2{
     background-color: black;
 
 }
- button.btn.btn-default.black{
+button.btn.btn-default.black{
     background-color: black;
+}
+/*changed by dangal*/
+.disableLink{
+    pointer-events: none;
+    color:grey;
 }

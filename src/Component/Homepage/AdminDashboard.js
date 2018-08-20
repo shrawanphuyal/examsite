@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 // import axios from "axios/index";
 var get_api = "https://n76ejhg4t3.execute-api.ap-southeast-1.amazonaws.com/fetch_userdata/fetchuserdata";
+var update_status_api = "https://csjk5nn5lg.execute-api.ap-southeast-1.amazonaws.com/UpdateStatusUser/updateuserdetails"
 
 export default class AdminDashboard extends Component{
 

@@ -204,7 +204,7 @@ class Login extends Component{
                             info: "Successfully Signed In..Please Wait"
                         });
                         setTimeout(() => {
-                            this.props.history.push('/testmode/Dynamo');
+                            this.props.history.push('/Admin/AdminDashboard');
                         }, 100);
 
                     })
@@ -292,6 +292,8 @@ class Login extends Component{
                             type="password"
                             name="password"
                             className="asd"/>
+                        <br/>
+                        <br/>
                         <input
                             onClick={submit}
                             id="btn"
@@ -299,7 +301,8 @@ class Login extends Component{
                             name="submit"
                             value="Log In"
                             className="mainbox"/>
-
+                        <br/>
+                        <br/>
                         <a href="#/Register" ><div className="mainbox">Register Now</div>
                         </a>
 

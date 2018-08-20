@@ -63,7 +63,7 @@ export default class Topnav extends Component{
                         (localStorage.getItem('admin') === "false")?
                             <nav className="navbar navbar-inverse navbar-fixed-top text">
 
-                                <h1>WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>
+                                <h1 className="welcome">WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>
 
                             </nav>:""
                     }
@@ -79,7 +79,8 @@ export default class Topnav extends Component{
                                         Menu</a></div>
                                 <div className="col-md-8 col-lg-8">
                                     <h4 className="mar-to-13">
-                                        Your account is Deactivated please contact the Administrator</h4></div>
+                                   Your account is Deactivated please contact the Administrator
+                                    </h4></div>
 
                                 <div className="col-md-2 col-lg-2  pull-right">
                                     <a onClick={this.signOut} className="navbar-brand" href="">Signout</a></div>

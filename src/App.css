@@ -1,6 +1,6 @@
 
 /*.App {*/
-  /*text-align: center;*/
+/*text-align: center;*/
 
 /*}*/
 *{
@@ -9,124 +9,123 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { trans.form: rotate(0deg); }
-  to { trans.form: rotate(360deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0px; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 20001; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 100px; /* Place content 60px from the top */
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 20001; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px; /* Place content 60px from the top */
     margin-top: 50px;
-  transition: 0.5s; /* 0.5 second transition effect to slide in the Sidenav */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the Sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
-.sidenav ul{
-    background-color: darkgray;
-}
+
 
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: fixed;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: fixed;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the Sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 .panel{
-  background-color:#111111;
-  color: #f1f1f1;
+    background-color:#111111;
+    color: #f1f1f1;
 
 }
 .pannel-title{
     padding-bottom:0px;
+    background-color: darkgrey;
 }
 .panel-footer{
-  background-color: #111111;
+    background-color: #111111;
+
 }
 a.panel-body.dropdown-toggle{
-  font-size: medium;
+    font-size: medium;
+
 
 }
 .number{
-
     padding-left:0px;
     padding-right:100px;
-
 }
 .no-padding{
-  padding: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 .button1{
-  float:left;
-  background-color: cornflowerblue;
+    float:left;
+
 }
 
 
 #page-numbers {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 
 }
 
 #page-numbers > li {
-  margin-right: 0.3em;
+    margin-right: 0.3em;
 
-  color: blue;
-  user-select: none;
-  cursor: pointer;
+    color: blue;
+    user-select: none;
+    cursor: pointer;
 }
 #display_index > li {
     padding: 0 5px 0 5px;
@@ -141,24 +140,25 @@ a.panel-body.dropdown-toggle{
     text-size:small;
 }
 .dropdown-menu-right{
- left:4em;
+    left:4em;
     float: right;
     font-size: small;
 }
 .dropdown-menu-right a {
     font-size: medium;
+    background-color: lightgrey;
 }
 .panel-collapse{
-background-color: #1d1d1d;
+    background-color: #1d1d1d;
 }
 .border{
     border-top: 2px solid #111111;
-    background-color: darkgrey;
+
 }
 
 .padding-top-30{
     padding-top:80px;
-    background-color: darkgray;
+    margin-top: 10px;
     padding-left: 15px;
 }
 div .col-md-3{
@@ -170,10 +170,7 @@ div .col-md-3{
     font-size:large;
 }
 
-.pagenum{
-  background-color:lightgrey;
 
-}
 .green{
     color:green;
 }
@@ -181,12 +178,12 @@ div .col-md-3{
     color:red;
 }
 .greenColor{
-color: green;
+    color: green;
     margin:5px;
     padding:5px;
 }
 .redColor{
-color:red;
+    color:red;
     margin:5px;
     padding:5px;
 }
@@ -206,33 +203,30 @@ a.navbar-brand{
 
 }
 /*.navbar{*/
-    /*position: fixed;*/
-    /*width:100%;*/
-    /*height:50px;*/
+/*position: fixed;*/
+/*width:100%;*/
+/*height:50px;*/
 
 /*}*/
 
-.container{
-    width:100%;
 
-}
 .text{
     text-decoration-color: #f1f1f1;
 }
 
 
 .well.well-lg.exam{
-   padding: 500px 0px 500px 0px;
+    padding: 500px 0px 500px 0px;
 }
 
 p.renderQuestion{
     font-size:25px;
     font-weight: bold;
-    background-color: darkgrey;
+
 }
-p{
+.answerr p{
     font-size: smaller;
-    background-color: darkgrey;
+
     float-wrap: wrap;
 }
 .button .btn .btn-primary .prev{
@@ -255,11 +249,11 @@ p{
 
 
 /*body{*/
-    /*background-image: url('aws.png');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
+/*background-image: url('aws.png');*/
+/*background-repeat: no-repeat;*/
+/*background-size: cover;*/
 
-/*LOGIN .form*/
+/*LOGIN FORM*/
 
 
 /*Exam mode Sets*/
@@ -280,8 +274,8 @@ button{
 
 }
 .btn.btn-success{
-    width:100px;
-    height:50px;
+    width:350px;
+    height:100px;
 }
 .footer{
     float: left;
@@ -294,45 +288,41 @@ button{
 
 
 
-.color{
-    padding: 0px 0px 0px 0px;
 
-}
 
 /*testmodule*/
 .here{
-    background-color:rosybrown;
-    margin-top: 61px;
+
+    margin-top: 60px;
     margin-left:2px;
 }
-.image{
-    background-color: rosybrown;
+
+
+.image {
     text-align: center;
-    margin-top: 57px;
+    margin-top: 50px;
 
 }
-.btn .btn-primary{
-    padding-left:20px;
-    width:50px;
-    text-align:right;
+.image p{
+
+    font-weight: bolder;
+
+
 }
+
 button{
     width:30%;
+}
 
-}
-.grid-default{
-    height:100%;
-    background-color:rosybrown;
-}
 .btn {
-font-size: larger;
+    font-size: larger;
 }
 .btn.btn-success {
-    width: 150px;
-    height: 100px;
+    width: 350px;
+    height: 150px;
+    background-color: black;
+
 }
-
-
 
 .btn .btn-primary .jenita{
     padding-top: 30px;
@@ -343,24 +333,14 @@ font-size: larger;
     width:auto;
 }
 
- .jenita{
-  background-color:darkgray;
 
-}
- div .jenita ul{
-     padding-left:60px;
- }
-div.container{
-    background-color: rosybrown;
-    padding-left:0px;
-    padding-right:0px;
-
+div .jenita ul{
+    padding-left:60px;
 }
 
 
-.grid default-grid{
-    background-color: rosybrown;
-}
+
+
 img{
     width:350px;
     height:200px;
@@ -368,14 +348,14 @@ img{
 
 .where{
     padding-top: 30px;
-    background-color: darkgray;
+
 
 }
-    /*ExamDevops*/
+/*ExamDevops*/
 .bottom-header{
     padding-top: 100px;
     padding-left: 10px;
-    background-color: lightgrey;
+
 
 }
 .answer{
@@ -385,7 +365,7 @@ img{
 
 }
 .questionhere {
- padding-top: 20px;
+    padding-top: 20px;
 
 
 
@@ -411,9 +391,7 @@ img{
     font-size: 30px;
 
 }
-html{
-    background-color: darkgrey;
-}
+
 
 div .container-fluid{
     background-color: black;
@@ -422,17 +400,8 @@ a.navbar-brand{
     color:black
 }
 
-div .SubmitValue{
-    background-color: darkgrey;
-}
-div.color{
-    background-color: rosybrown;
-}
-.bottom-header{
-    background-color:darkgray;
 
-}
-/*login .form*/
+/*login form*/
 :root{
     --primaryred:#ff424f;
     --secondaryred:#f84735;
@@ -477,8 +446,8 @@ img{
     padding-left:20px;
     padding-bottom:20px;
 
-
 }
+
 .firstheadings h1{
     font-size: 4rem;
     font-family:var(--mainfont);
@@ -489,13 +458,13 @@ img{
 .firstheadings h2{
     font-size:1.2rem;
     font-weight: 300;
-    color:yellow;
+    color:whitesmoke;
     font-weight: bold;
 
 }
 .formbox{
     background:rgb(34,43,49,0.7);
-    color:white;
+    color:black;
     flex-basis: 35%;
     border-top: 10px solid var(--secondaryred);
     padding:2% 3%;
@@ -508,13 +477,14 @@ img{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.formbox .form label{
+
+.formbox form label{
     color: rgba(255, 255, 255, 0.8);
     display: inline-block;
     max-width: 100%;
     margin-bottom: 0.3rem;
 }
-.formbox .form .asd{
+.formbox form .asd{
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
     background: transparent;
@@ -524,11 +494,19 @@ img{
     border-radius: 4px;
     margin-bottom: 1rem;
 }
-.form .mainbox{
-    color: white;
+.mainbox{
+    margin: 0;
+    width:100%;
+    height:50px;
+    background-color: red;
+    color:white;
+
+}
+form .mainbox{
+    color: black;
     box-shadow: none;
     background: var(--secondaryred);
-    height: 2.8rem;
+    height: 3.8rem;
     display: block;
     width: 100%;
     border-radius: 4px;
@@ -539,12 +517,18 @@ img{
 }
 a .mainbox{
     margin: 0;
-    padding: 2%;
+    padding: 5%;
+    background-color: red;
+    color:white;
+    text-align: center;
 }
 .signin{
     margin-top:50px;
     background-color: grey;
 
+}
+.welcome{
+    color:white;
 }
 .heading--primary{
     margin-top: 60px;
@@ -552,7 +536,7 @@ a .mainbox{
 
 }
 .heading--primary h1{
-    text-decoration-color: blue;
+    text-decoration-color: green;
 }
 .signcss{
     margin-left: 100px;
@@ -560,19 +544,114 @@ a .mainbox{
     background-color: grey;
 
 }
-.label{
+.form label{
     font-weight: bold;
+    color:white;
+
 }
+a .mainbox{
+    margin: 0;
+    padding: 2%;
+}
+.loggin{
+    color: white;
+}
+
 .form-control{
     background-color: white;
 }
 .signuphere{
-    text-decoration-color: red;
+    background-color:whitesmoke;
+    color:green;
 }
 .down{
-    background-color:darkgrey;
+    background-color:grey;
+    padding-bottom: 150px;
+}
+a:hover{
+    font-weight: bolder;
+}
+/*testmodule*/
+.box{
+    background-color: black;
+    text-align: white;
+    height:200px;
+    width:350px;
+    margin-left: 20px;
+    margin-right: 200px;
+    margin-top:80px;
+    margin-bottom: 100px;
+    width: 400px;
+    height:250px;
+}
+.black{
+    background-image: url("aws2.png");
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    font-style: italic;
+    color:white;
+    background-color: black;
+    text-align: right;
+    text-decoration-color: whitesmoke;
+
+
+}
+.black:hover{
+    background-position: 0 0;
+    box-shadow: 5px 5px 10px ;
+    color: white;
+}
+.boxx{
+    background-image: url("exam2.png");
+    background-position:auto 150px;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 200px;
+    margin-bottom: 43px;
+    height:180px;
+    width:350px;
+    background-color: black;
+    color:white;
+
+}
+.boxx:hover{
+    background-position: 0 0;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 8px 15px #333333;
 }
 
+
+.that{
+    min-height: 40rem;
+
+    width:100%;
+
+    background-color: darkgrey;
+
+}
+.heading-text{
+    margin-top: 58px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #666666;
+    padding-bottom: 10px;
+    color: white;
+
+}
+/*exammode*/
+.heading-test{
+    margin-top: 58px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #666666;
+    padding-bottom: 10px;
+    color: white;
+
+}
 .mar-to-13{
     color:red;
     margin-top:13px;
