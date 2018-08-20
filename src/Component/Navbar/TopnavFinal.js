@@ -32,10 +32,21 @@ export default class Topnav extends Component{
             })
         }
 
+        componentDidMount(){
+
+        }
 
         render(){
-        console.log(localStorage.getItem('admin'));
-        console.log(localStorage.getItem('activeUser'))
+        if(localStorage.getItem('menuHandle') === false){
+            console.log(localStorage.getItem('menuHandle'))
+            alert("this")
+            this.closeNav()
+        }
+        else{
+
+        }
+        //console.log(localStorage.getItem('menu'));
+        // console.log(localStorage.getItem('activeUser'))
         return(
             <nav className="navbar navbar-inverse navbar-fixed-top">
                 <div className="container-fluid">
@@ -45,7 +56,7 @@ export default class Topnav extends Component{
                            <div className="row">
 
                             <div className="col-md-5 col-lg-8">
-                                <a className="navbar-brand"
+                                <a className="navbar-brand cursor"
                                    onClick={(this.state.MenuOpened)?this.openNav.bind(this):this.closeNav.bind(this)}>
                                     Menu</a></div>
                                 <div className="col-md-2 col-lg-3  pull-right">

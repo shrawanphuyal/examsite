@@ -19,13 +19,15 @@ export default class Sidenav extends Component {
         document.getElementById("mySidenav").style.width = "0";
 
     }
-
+    handleMenuHide(){
+        localStorage.setItem("menuHandle","false")
+    }
 
     render() {
+        localStorage.setItem("MenuOpened","true");
             return (
-
-
-                    <div id="mySidenav" className="sidenav">
+              <div>
+               <div id="mySidenav" className="sidenav">
                         <a href="#">Introduction</a>
 
                         <div className="panel-group">
@@ -41,7 +43,7 @@ export default class Sidenav extends Component {
                                             <a href="#" className="panel-body dropdown-toggle" data-toggle="dropdown">Developer Associate</a>
                                             <ul className="dropdown-menu dropdown-menu-right">
                                                 {/*routing through this*/}
-                                                <li><a href="#testmode/DevOps">Test mode</a>
+                                                <li><a onClick={this.handleMenuHide.bind(this)} href="#testmode/DevOps">Test mode</a>
                                                     </li>
 
                                                 <li><a href="#Exammode/DevOps">Exam mode</a>
@@ -70,13 +72,10 @@ export default class Sidenav extends Component {
                         <a href="#">Contact</a>
                         </div>
                     </div>
+                  <div className="wrapper wrap" onClick={(localStorage.getItem("MenuOpened")=="true")?this.closeNav.bind(this):""}>
+                  </div>
 
-
-
-
-
-
-
+              </div>
             )
         }
 

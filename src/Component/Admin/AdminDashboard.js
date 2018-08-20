@@ -108,7 +108,8 @@ export default class AdminDashboard extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="admin">
+                a
                 <div className="row margin-top">
                     <div className="usertable">
                         <div className="col-md-8">
@@ -139,14 +140,14 @@ export default class AdminDashboard extends Component {
                                                            <td>
 
                                                                <a
-                                                                   className={(dynamicData[data].status == "active")? "disableLink":""}
+                                                                   className={(dynamicData[data].status == "active")? "disableLink":"cursor"}
                                                                    onClick={this.handleActivate.bind(this,dynamicData[data].username)} >
                                                                 <span className="glyphicon glyphicon-ok ok"></span>
                                                             </a>
 
 
                                                             <a
-                                                                className={(dynamicData[data].status == "deactive")? "disableLink":""}
+                                                                className={(dynamicData[data].status == "deactive")? "disableLink":"cursor"}
                                                                 onClick={this.handleDeactivate.bind(this,dynamicData[data].username)} >
                                                                 <span className="glyphicon glyphicon-remove edit"></span>
                                                             </a>

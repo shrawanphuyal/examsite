@@ -15,6 +15,9 @@ class Login extends Component{
         super(props);
         this.state = {
             admins:[],
+            newpassword: '',
+            renewpassword: '',
+            resetPassword: false,
             users:{},
             username: '',
             password: '',
@@ -34,7 +37,9 @@ class Login extends Component{
         this.handleChange=this.handleChange.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this);
     }
-
+    handleChange(event){
+        this.setState({[event.target.name]: event.target.value})
+    }
     componentDidMount(){
         //fetch admin details
         axios.get(fetchAdmin, {
@@ -64,6 +69,63 @@ class Login extends Component{
             })
             .catch(error => {
             });
+    }
+
+    handlePasswordSubmit(event){
+        this.setState({
+            info: "Processing..Please Wait!!"
+        });
+
+        if(this.state.newpassword !== this.state.renewpassword) {
+            this.setState({
+                info: "Password didnot match"
+            })
+        }
+        else{
+            localStorage.setItem("resetpassword", this.state.renewpassword)
+            this.signInEmployeeUser({
+                username: localStorage.getItem("employeename"),
+                password: localStorage.getItem("employeepassword")
+            }).then(({result})=>{
+                axios.get(API_URL, {
+                    params : {
+                        addNewIntern: "PostConfirmation",
+                        u: this.state.username
+                    }
+                })
+                    .then(response => {
+                        //console.log(response.data)
+                        localStorage.setItem("employee", "true");
+                        localStorage.setItem("employeename", this.state.username);
+                        localStorage.setItem("employeepassword", "");
+                        localStorage.setItem("resetpassword", "")
+                        this.props.history.push('/dashboard/employee');
+                    })
+                    .catch(error => {
+                        this.setState({
+                            //info: "There's an error in the reequest"
+                            info: error.toString()
+                        });
+                    });
+
+            })
+                .catch((err)=>{
+                    // if failure, display the error message and toggle the loading icon to disappear
+                    console.log(err);
+                    if(err['code']==="InvalidLambdaResponseException"){
+                        this.setState({
+                            info: "Email Already Used"
+                        });
+                    }
+                    else{
+                        this.setState({
+                            info: err['message']
+                        })
+                    }
+
+                })
+
+        }
     }
 
     handleChange(event){
@@ -179,14 +241,14 @@ class Login extends Component{
 
     handleSubmit(event){
         event.preventDefault();
-       // sweetAlert("Logging in... please wait!!!")
+        // sweetAlert("Logging in... please wait!!!")
         localStorage.setItem("admin", "true");
         this.setState({
             info: "Logging in..Please Wait!!"
         });
         for(var i =0;i<this.state.admins.length;i++)
         {
-           var user = document.getElementById("username").value;
+            var user = document.getElementById("username").value;
             if(this.state.admins[i] === user)
             {
                 //admin
@@ -217,7 +279,7 @@ class Login extends Component{
                         })
 
                     })
-            break;
+                break;
             }
             else{
                 // user
@@ -264,59 +326,104 @@ class Login extends Component{
 
     render(){
         let submit=this.handleSubmit.bind();
-        return(
-            <div className="fullcontent">
-                <div className="firstheadings">
+        if(!this.state.resetPassword){
 
-                    <h1>AWS EXAM PORTAL</h1>
-                    <h2>We provides you better way of preparation for the Aws examination.Different types of question sets are provided to make you ready for the examination.</h2>
-                    <a href="#changepwd">Change pwd</a>
-                </div>
-                <div className="formbox">
-                    <h3>Log In</h3>
-                    <div className="form">
-                        <form action="">
-                        <label htmlFor="">Username</label>
-                        <input
-                            value={this.state.username}
-                            onChange={(event) => this.handleChange(event)}
-                            id="username"
-                            type="text"
-                            name="username"
-                            className="asd"/>
+            return(
+                <div className="fullcontent">
+                    <div className="firstheadings">
 
-                        <label htmlFor="">Password</label>
-
-                        <input
-                            value={this.state.password}
-                            onChange={(event) => this.handleChange(event)}
-                            id="password"
-                            type="password"
-                            name="password"
-                            className="asd"/>
-
-                        <input
-                            onClick={submit}
-                            id="btn"
-                            type="submit"
-                            name="submit"
-                            value="Log In"
-                            className="mainbox"/>
-
-                        <a href="#/Register" ><div className="mainbox">Register Now</div>
-                        </a>
-
-                        <h1 className="message">{this.state.info}</h1>
-                        </form>
+                        <h1>AWS EXAM PORTAL</h1>
+                        <h2>We provides you better way of preparation for the Aws examination.Different types of question sets are provided to make you ready for the examination.</h2>
+                        <a href="#changepwd">Change pwd</a>
                     </div>
-                 </div>
-            </div>
+                    <div className="formbox">
+                        <h3>Log In</h3>
+                        <div className="form">
+                            <form action="">
+                                <label htmlFor="">Username</label>
+                                <input
+                                    value={this.state.username}
+                                    onChange={(event) => this.handleChange(event)}
+                                    id="username"
+                                    type="text"
+                                    name="username"
+                                    className="asd"/>
 
+                                <label htmlFor="">Password</label>
 
+                                <input
+                                    value={this.state.password}
+                                    onChange={(event) => this.handleChange(event)}
+                                    id="password"
+                                    type="password"
+                                    name="password"
+                                    className="asd"/>
 
+                                <input
+                                    onClick={submit}
+                                    id="btn"
+                                    type="submit"
+                                    name="submit"
+                                    value="Log In"
+                                    className="mainbox"/>
 
+                                <a href="#/Register" ><div className="mainbox">Register Now</div>
+                                </a>
 
-        );
+                                <h1 className="message">{this.state.info}</h1>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        else{
+
+            return(
+                <div className="fullcontent">
+                    <div className="firstheadings">
+
+                        <h1>AWS EXAM PORTAL</h1>
+                        <h2>We provides you better way of preparation for the Aws examination.Different types of question sets are provided to make you ready for the examination.</h2>
+                        <a href="#changepwd">Change pwd</a>
+                    </div>
+                    <div className="formbox">
+                        <h3>Log In</h3>
+                        <div className="form">
+                            <form action="">
+                                <input
+                                    type="password"
+                                    name="newpassword"
+                                    value={this.state.newpassword}
+                                    onChange={(event) => this.handleChange(event)}
+                                    placeholder="Password"
+                                    required="required"/><br/>
+                                <input
+                                    type="password"
+                                    name="renewpassword"
+                                    value={this.state.renewpassword}
+                                    onChange={(event) => this.handleChange(event)}
+                                    placeholder="Confirm Password"
+                                    required="required"/><br/>
+                                <input
+                                    onClick={this.handlePasswordSubmit.bind(this)}
+                                    id="btn"
+                                    type="submit"
+                                    name="submit"
+                                    value="Change Password"
+                                    className="mainbox"/>
+
+                                <a href="#/Register" ><div className="mainbox">Register Now</div>
+                                </a>
+
+                                <h1 className="message">{this.state.info}</h1>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
     }
 }
 export default withRouter(Login)

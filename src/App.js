@@ -24,7 +24,6 @@ import Homepage from './Component/Homepage/Home';
 import LoggedinHome from './Component/Slider/LoggedinHome';
 import Login from './Component/Slider/Login';
 import ChangePwdHome from './Component/Slider/ChangePwdHome';
-import AuthExample from './Component/Slider/AuthExample'
 
 // import all the Test Module here
 import Testmodule from "./Component/Testmode/Modules/Testmodule";

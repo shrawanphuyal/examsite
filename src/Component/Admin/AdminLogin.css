@@ -110,3 +110,16 @@ button.btn.btn-default.black{
     pointer-events: none;
     color:grey;
 }
+/*.wrap{*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 51px;*/
+    /*width: 1115px;*/
+    /*height: 623px;*/
+
+
+/*}*/
+.admin{
+    background-image: url("../../admin6.jpg");
+    background-size:cover;
+}
