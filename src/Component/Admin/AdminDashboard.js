@@ -2,13 +2,16 @@ import React,{Component} from 'react';
 import axios from 'axios';
 import sweetAlert from 'sweetalert';
 var update_status_api = "https://db6rwb94h1.execute-api.ap-southeast-1.amazonaws.com/dev/abc";
-
+var inviteuser_api = ""
 export default class AdminDashboard extends Component {
 
     constructor() {
         super();
         this.state = {
-            user_data: []
+            user_data: [],
+            info:'',
+            email:'',
+            username:''
         }
     }
 
@@ -21,9 +24,61 @@ export default class AdminDashboard extends Component {
             });
         })
     }
+    inviteUsers(event){
+        var fullname = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var username= document.getElementById("username").value;
+        console.log(fullname)
+        console.log(email)
+        console.log(username)
+        const user = {
+            username:username,
+            email:email,
+            fullname:fullname
+        };
+
+        event.preventDefault();
+        if(username===''||email===''){
+            this.setState({
+                info: "Fill all fields properly"
+            });
+        }
+        else {
+            this.setState({
+                info:'Please Wait',
+            });
+            axios.get(inviteuser_api, {user:user})
+                .then(response => {
+                    if(response.data==="Successfully Registered."){
+
+                    }
+                    else{
+                        //console.log(response.data)
+                        this.setState({
+                            info:response.data
+                        })
+                    }
+                })
+                .catch(error => {
+                    localStorage.clear()
+                    alert("Your Session Expired! Log in again...")
+                    this.props.history.push('/login/company')
+
+                });
+        }
+    }
+    handleChange(event){
+        if(event.target.value[event.target.value.length -1] === "@"){
+            this.setState({username:this.state.email})
+        }
+        else{
+            this.setState({[event.target.name]: event.target.value})
+        }
+
+    }
     handleActivate(username,f){
         //alert("a")
-        console.log(username);
+        //console.log(username);
         const user = {
             username:username,
             status:"active"
@@ -38,7 +93,7 @@ export default class AdminDashboard extends Component {
     }
     handleDeactivate(username,f){
         //alert("a")
-        console.log(username);
+        //console.log(username);
         const user = {
             username:username,
             status:"inactive"
@@ -101,7 +156,7 @@ export default class AdminDashboard extends Component {
                                                 );
                                             });
 
-                                            console.log(a);
+                                           // console.log(a);
                                         })
                                     }
                                     <tr>
@@ -157,21 +212,30 @@ export default class AdminDashboard extends Component {
                     </div>
 
                     <div className="col-md-4 userinfo">
-                        <h2 className="user">ADD USERS</h2>
+                        <h2 className="user"> <b><u>ADD USERS</u></b></h2>
                         <br/>
-                        <form action="#">
+                        <br/>
+
                             <div className="form-group">
-                                <label htmlFor="username">Firstname</label>
-                                <input className="form-control outline" type="text" name="username" id="username"
-                                       placeholder="Enter firstname" required/>
-                                <label htmlFor="lastname"> Lastname</label>
-                                <input className="form-control outline" type="text" name="lastname" id="lastname"
-                                       placeholder="Enter lastname" required/>
+                                <label htmlFor="fullname">Fullname</label>
+                                <input className="form-control outline" type="text" name="fullname" id="fullname"
+                                       placeholder="Enter fullname" required/>
 
                                 <label htmlFor="email">Email</label>
-                                <input className="form-control outline" type="text" name="email" id="email"
+                                <input
+                                        onChange={(event) => this.handleChange(event)}
+                                        className="form-control outline" type="text" name="email" id="email"
                                        placeholder="Enter email"
                                        required/>
+                                
+                                <label htmlFor="username"> Username</label>
+
+                                <input
+                                    value={this.state.username}
+                                    className="form-control outline" type="text" name="username" id="username"
+                                       placeholder="Enter username" required/>
+
+                                
                                 <label htmlFor="email">Country</label>
                                 <br/>
                                 <select name="Country">
@@ -427,12 +491,12 @@ export default class AdminDashboard extends Component {
 
                                 <ul className="list-inline outline">
                                     <li>
-                                        <input className="btn btn--form add" type="submit" value="Add"/>
+                                        <input onClick={this.inviteUsers.bind(this)} className="btn btn--form add" type="submit" value="Add"/>
                                     </li>
 
                                 </ul>
                             </div>
-                        </form>
+
                     </div>
                 </div>
             </div>
