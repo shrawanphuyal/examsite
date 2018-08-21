@@ -28,7 +28,7 @@ export default class Sidenav extends Component {
             return (
               <div>
                <div id="mySidenav" className="sidenav">
-                        <a href="#">Introduction</a>
+                        <a href="#loggedin">Introduction</a>
 
                         <div className="panel-group">
                             <div className="panel">

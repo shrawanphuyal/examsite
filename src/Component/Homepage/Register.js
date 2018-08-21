@@ -147,7 +147,7 @@ export default class Register extends Component{
                     <div className="signup__overlay"></div>
                 </div>
                 <div className="signup ">
-
+                    <form action="">
                         <div className="form-group">
                             <label htmlFor="fullname">Full Name</label>
                             <input className="form-control" type="text" name="fullname" id="fullname"
@@ -183,6 +183,7 @@ export default class Register extends Component{
                                 </li>
                             </ul>
                         </div>
+                    </form>
                     <h3>{this.state.info}</h3>
 
                 </div>
