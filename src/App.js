@@ -12,6 +12,8 @@ import {HashRouter as Router,Route, Redirect, Link} from 'react-router-dom';
 // import all the Test Mode questions here
 import TestDevOpsEC2 from "./Component/Testmode/Questions/TestDevOpsEC2";
 import TestDevOpsDynamo from "./Component/Testmode/Questions/TestDevOpsDynamo";
+import TestDevOpsIAM from "./Component/Testmode/Questions/TestDevOpsIAM";
+import TestDevOpsS3 from "./Component/Testmode/Questions/TestDevOpsS3";
 import TestSysOps from "./Component/Testmode/Questions/TestSysOps";
 import TestSolArch from "./Component/Testmode/Questions/TestSolutionArch";
 
@@ -39,6 +41,8 @@ import ExammoduleSolArch from "./Component/Exammode/Modules/ExammoduleSolArch";
 import Register from "./Component/Homepage/Register";
 import AdminDashboard from "./Component/Admin/AdminDashboard";
 import AdminLogin from "./Component/Admin/AdminLogin";
+import UploadQuestion from "./Component/Admin/UploadQuestion";
+
 import Admin from './Component/test/Admin2'
 
 const PrivateRoute = ({component: Component, ...rest}) => (
@@ -73,6 +77,8 @@ class App extends Component {
 
                         {/*Testmode/Questions/*/}
                         <PrivateRoute exact path="/testmode/Dynamo" component={TestDevOpsDynamo}/>
+                        <PrivateRoute exact path="/testmode/IAM" component={TestDevOpsIAM}/>
+                        <PrivateRoute exact path="/testmode/S3" component={TestDevOpsS3}/>
                         <PrivateRoute exact path="/testmode/EC2" component={TestDevOpsEC2}/>
                         <PrivateRoute exact path="/testmode/SysOps/EC2" component={TestSysOps}/>
                         <PrivateRoute exact path="/testmode/SolArch/EC2" component={TestSolArch}/>
@@ -89,7 +95,10 @@ class App extends Component {
 
                         <Route exact path='/' component={Homepage}/>
                         <Route exact path="/Register" component={Register}/>
+
                         <PrivateRoute exact path="/Admin/AdminDashboard" component={AdminDashboard}/>
+                        <PrivateRoute exact path="/Admin/AdminDashboard/UploadQuest" component={UploadQuestion}/>
+
                         <Route exact path="/Admin/AdminLogin" component={AdminLogin}/>
                     </div>
 

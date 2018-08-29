@@ -142,10 +142,10 @@ export default class LoggedinHome extends Component{
 
             <div className="fullcontent">
                 <Topnav1/>
-                <div className="firstheadings">
+                <div className="firstheadings first">
 
-                    <h1>AWS EXAM PORTAL</h1>
-                    <h2>We provides you better way of preparation for the Aws examination.Different types of question sets are provided to make you ready for the examination.</h2>
+                    <h1 className="insideloggin">HELLO! Welcome to the AWS exam portal</h1>
+                    <h2 className="insideloggin"> YOU CAN NOW GO THROUGH THE MENU BAR FOR THE TEST QUESTIONS AS WELL AS EXAM QUESTIONS</h2>
                 </div>
                 {/*<div className="formbox">*/}
                     {/*<h3>Log In</h3>*/}

@@ -268,15 +268,16 @@ class Login extends Component{
             <div className="fullcontent">
                 <div className="firstheadings">
 
-                    <h1>AWS EXAM PORTAL</h1>
-                    <h2>We provides you better way of preparation for the Aws examination.Different types of question sets are provided to make you ready for the examination.</h2>
-                    <a href="#changepwd">Change pwd</a>
+                    <h1 className="topic">AWS EXAM PORTAL</h1>
+                    <h2>We provides you better way of preparation for the AWS examination. Different types of question sets are provided to make you ready for the examination.</h2>
+
+                    {/*<a href="#changepwd">Change pwd</a>*/}
                 </div>
                 <div className="formbox">
-                    <h3>Log In</h3>
+                    <h3 className="topic">Log In</h3>
                     <div className="form">
                         <form action="">
-                        <label htmlFor="">Username</label>
+                        <label htmlFor="">Username / Email</label>
                         <input
                             value={this.state.username}
                             onChange={(event) => this.handleChange(event)}

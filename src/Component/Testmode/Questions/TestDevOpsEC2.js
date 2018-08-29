@@ -26,7 +26,8 @@ export default class Test extends Component {
             answer_description:[],
             correct:false,
             answerSubmitted:false,
-            disabledInfo:''
+            disabledInfo:'',
+            ans_length:[]
         };
         this.handlePageNumClick = this.handlePageNumClick.bind(this);
     }
@@ -152,9 +153,16 @@ export default class Test extends Component {
             }
         })
             .then(response => {
+
+                var ans_length = [];
+                for(var i=0;i<response.data["resEC2"].length;i++){
+                    ans_length[i] = response.data["ansEC2"][""+(i+1)].length
+                }
+
                 this.setState({
                     fetched_data: response.data["resEC2"],
-                    correct_answer:response.data["ansEC2"]
+                    correct_answer:response.data["ansEC2"],
+                    ans_length: ans_length
                 })
             })
             .catch(error => {
@@ -389,7 +397,6 @@ export default class Test extends Component {
 
 
     render() {
-        //console.log(this.state.previousPages);
         this.state.answer= new Array();
         for(var l = 0; l<this.state.fetched_data.length;l++)
         {
@@ -420,8 +427,17 @@ export default class Test extends Component {
             }
         }
 
+
+        var singleChoice = false
+
         // display questions
         const renderquestion = currentquestion.map((todo, index) => {
+            if(this.state.ans_length[this.state.currentPage-1] == 1){
+                singleChoice = true;
+            }
+            else{
+                singleChoice = false;
+            }
             return <div>
                 <p className="renderQuestion" key={index}>{this.state.currentPage}. {todo}</p>
             </div>;
@@ -451,19 +467,36 @@ export default class Test extends Component {
                 }
             }
 
+            // console.log(singleChoice)
+            if(singleChoice){
+                return <div>
 
-            return <div>
+                    <p className={(correct)?'greenColor':(user_ans_correct)?'redColor':'ansColor'}  key={index}>
+                        <input
+                            name="ans"
+                            value={index+1}
+                            type="checkbox"
+                            disabled={this.state.disabled}
+                            onChange={this.onChange.bind(this)} /> &nbsp;
+                        {todo}
+                    </p>
+                </div>;
+            }
+            else{
+                return <div>
 
-                <p className={(correct)?'greenColor':(user_ans_correct)?'redColor':'ansColor'}  key={index}>
-                    <input
-                        name="ans"
-                        value={index+1}
-                        type="checkbox"
-                        disabled={this.state.disabled}
-                        onChange={this.onChange.bind(this)} /> &nbsp;
-                    {todo}
-                </p>
-            </div>;
+                    <p className={(correct)?'greenColor':(user_ans_correct)?'redColor':'ansColor'}  key={index}>
+                        <input
+                            name="ans"
+                            value={index+1}
+                            type="checkbox"
+                            disabled={this.state.disabled}
+                            onChange={this.onChange.bind(this)} /> &nbsp;
+                        {todo}
+                    </p>
+                </div>;
+            }
+
         });
 
         // Logic for displaying page numbers

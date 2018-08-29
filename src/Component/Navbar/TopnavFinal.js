@@ -56,65 +56,72 @@ export default class Topnav extends Component{
                            <div className="row">
 
                             <div className="col-md-5 col-lg-8">
-                                <a className="navbar-brand cursor"
+                                <a className="navbar-brand cursor glyphicon glyphicon-menu-hamburger"
                                    onClick={(this.state.MenuOpened)?this.openNav.bind(this):this.closeNav.bind(this)}>
                                     Menu</a></div>
-                                <div className="col-md-2 col-lg-3  pull-right">
-                                <a onClick={this.signOut} className="navbar-brand" href="">Signout</a></div>
+                                <div className="col-xs-6 col-md-2 pull-right">
+                                <a onClick={this.signOut} className="navbar-brand glyphicon  glyphicon-log-out" href="">Signout</a></div>
 
                            </div>
-                                :""
+                                :
+                                ((localStorage.getItem('admin') === "true") && (localStorage.getItem('activeUser') === "false"))?
+                                    <div className="row">
+
+                                        <div className="col-md-2 col-lg-2">
+                                            <a className="navbar-brand inactive glyphicon glyphicon-menu-hamburger"
+                                            >
+                                                Menu</a></div>
+                                        <div className="col-md-8 col-lg-8">
+                                            <h4 className="mar-to-13">
+                                                Your account is Deactivated please contact the Administrator
+                                            </h4></div>
+
+                                        <div className="col-xs-6 col-md-2 pull-right">
+                                            <a onClick={this.signOut} className="navbar-brand glyphicon  glyphicon-log-out" href="">Signout</a></div>
+
+                                    </div>:
+                                    <nav className="navbar navbar-inverse navbar-fixed-top text">
+
+                                        <h1 className="welcome">WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>
+
+                                    </nav>
+
+
 
 
                         }
 
 
                     </div>
-                    {
-                        (localStorage.getItem('admin') === "false")?
-                            <nav className="navbar navbar-inverse navbar-fixed-top text">
+                    {/*{*/}
+                        {/*(localStorage.getItem('admin') === "false")?*/}
+                            {/*<nav className="navbar navbar-inverse navbar-fixed-top text">*/}
 
-                                <h1 className="welcome">WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>
+                                {/*<h1 className="welcome">WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>*/}
 
-                            </nav>:""
-                    }
+                            {/*</nav>:""*/}
+                    {/*}*/}
 
 
-                    {
-                        ((localStorage.getItem('admin') === "true") && (localStorage.getItem('activeUser') === "false"))?
-                            <div className="row">
+                    {/*{*/}
+                        {/*((localStorage.getItem('admin') === "true") && (localStorage.getItem('activeUser') === "false"))?*/}
+                            {/*<div className="row">*/}
 
-                                <div className="col-md-2 col-lg-2">
-                                    <a className="navbar-brand inactive"
-                                       >
-                                        Menu</a></div>
-                                <div className="col-md-8 col-lg-8">
-                                    <h4 className="mar-to-13">
-                                   Your account is Deactivated please contact the Administrator
-                                    </h4></div>
+                                {/*<div className="col-md-2 col-lg-2">*/}
+                                    {/*<a className="navbar-brand inactive glyphicon glyphicon-menu-hamburger"*/}
+                                       {/*>*/}
+                                        {/*Menu</a></div>*/}
+                                {/*<div className="col-md-8 col-lg-8">*/}
+                                    {/*<h4 className="mar-to-13">*/}
+                                   {/*Your account is Deactivated please contact the Administrator*/}
+                                    {/*</h4></div>*/}
 
-                                <div className="col-md-2 col-lg-2  pull-right">
-                                    <a onClick={this.signOut} className="navbar-brand" href="">Signout</a></div>
+                                {/*<div className="col-xs-6 col-md-2 pull-right">*/}
+                                    {/*<a onClick={this.signOut} className="navbar-brand glyphicon  glyphicon-log-out" href="">Signout</a></div>*/}
 
-                            </div>
-                            :""
-                    }
-
-                    {/*<ul className="nav navbar-nav navbar-right">*/}
-                        {/*/!*<li><a href="#AdminDashboard"><span className="glyphicon glyphicon-user"></span> Admin</a></li>*!/*/}
-                      {/*//  {*/}
-                            {/*(localStorage.getItem('admin') === "true")?*/}
-                                {/*<li><a onClick={this.signOut} href="#"><span className="glyphicon glyphicon-log-in"></span> Sign Out</a></li>:""*/}
-                       {/*// }*/}
-
-                    {/*</ul>*/}
-
-                    {/*<nav className="navbar navbar-inverse navbar-fixed-top text">*/}
-                        {/*<ul className="nav navbar-nav navbar-right">*/}
-                            {/*Inactive User*/}
-                        {/*<li><a onClick={this.signOut} href="#"><span className="glyphicon glyphicon-log-in"></span> Sign Out</a></li>*/}
-                        {/*</ul>*/}
-                    {/*</nav>*/}
+                            {/*</div>*/}
+                            {/*:""*/}
+                    {/*}*/}
                 </div>
             </nav>
 

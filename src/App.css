@@ -451,7 +451,9 @@ img{
 .firstheadings h1{
     font-size: 4rem;
     font-family:var(--mainfont);
-    color:Red;
+    color: #4246ff;
+    font-weight: bold;
+    font-style: italic;
     margin:3% 0% 3% 0%;
 
 }
@@ -498,15 +500,17 @@ img{
     margin: 0;
     width:100%;
     height:50px;
-    background-color: red;
+    background-color:red;
+
     color:white;
 
 }
 form .mainbox{
-    color: black;
+
     box-shadow: none;
-    background: var(--secondaryred);
+    background: red;
     height: 3.8rem;
+    font-weight: bolder;
     display: block;
     width: 100%;
     border-radius: 4px;
@@ -663,4 +667,17 @@ a:hover{
 }
 .cursor{
     cursor:pointer;
+}
+.topic{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+
+}
+
+.first{
+    background-color: #11;
+    margin-right: 200px;
+    margin-left: 250px;
 }

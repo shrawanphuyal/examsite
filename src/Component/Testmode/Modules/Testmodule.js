@@ -28,8 +28,8 @@ export default class Testmodule extends Component {
                                         </div>
                                     </div>
                                     <div className="col-xs-4 col-md-4 gutter-margin-xs-md testhere">
-                                        <div className="inner"> <a href="#Testmode/EBS">
-                                            <button type="button" className="btn btn-default black">EBS</button></a>
+                                        <div className="inner"> <a href="#Testmode/IAM">
+                                            <button type="button" className="btn btn-default black">IAM</button></a>
                                         </div>
                                     </div>
                                     <div className="col-xs-4 col-md-4 gutter-margin-xs-md testhere">
@@ -51,8 +51,8 @@ export default class Testmodule extends Component {
                                         </div>
 
                                         <div className="col-xs-4 col-md-4 gutter-margin-xs-md testhere">
-                                            <div className="inner"><a href="#TestMode/VPC">
-                                                <button type="button" className="btn btn-default black">VPC</button></a>
+                                            <div className="inner"><a href="#TestMode/SQS">
+                                                <button type="button" className="btn btn-default black">SQS/SNS</button></a>
                                             </div>
                                         </div>
                                         <div className="col-xs-4 col-md-4 gutter-margin-xs-md testhere">

@@ -4,8 +4,7 @@ import axios from 'axios';
 import sweetAlert from 'sweetalert'
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
-var get_api = "https://4txsurtk1e.execute-api.ap-southeast-1.amazonaws.com/Devops_answer_chk/exam-mode-devops-anschk"
-var post_api = "https://j9lc0ksjg5.execute-api.ap-southeast-1.amazonaws.com/exam_mode_SolnArch_quest/exan-mode-devops"
+var api_devOps = "https://mqtnyvj2kb.execute-api.ap-southeast-1.amazonaws.com/devops_question/devops-question-post"
 // var get_api = "https://0mbjzz7yd9.execute-api.us-east-1.amazonaws.com/exam-backend/examsite-backend"
 export default class Enter_daily extends Component {
     constructor() {
@@ -67,13 +66,14 @@ export default class Enter_daily extends Component {
         this.setState({
             info:"Please Wait..."
         })
-        const user = {
+        const quest = {
+            mode:"DevOpsAnsCheck",
             name: this.state.user_answer,
             questionnumber:this.state.fetched_data.length
         };
 
 
-        axios.post(get_api, { user: user})
+        axios.post(api_devOps, { quest: quest})
             .then(res => {
                 sweetAlert("Result:\n\n" +
                     "Total Number of Questions:  "+this.state.fetched_data.length+"\n\n" +
@@ -220,11 +220,10 @@ export default class Enter_daily extends Component {
     }
 
     fetchdata(){
-        axios.get(post_api, {
-            params: {
-
-            }
-        })
+        const quest = {
+            mode:"DevOpsSetA"
+        }
+        axios.post(api_devOps, {quest: quest })
             .then(response => {
                 var ans_description = []
                 for(var i =0;i<response.data["res"].length;i++){
@@ -399,12 +398,12 @@ export default class Enter_daily extends Component {
                             :<span className="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
                         }
                     </h2>
-                        {ansdeep}
+                    {ansdeep}
 
-                        {/*<div className="button2">*/}
-                        {/*<button value={i+1} onClick={this.changeColor.bind(this,i+1)}>Check Again</button>*/}
+                    {/*<div className="button2">*/}
+                    {/*<button value={i+1} onClick={this.changeColor.bind(this,i+1)}>Check Again</button>*/}
                     <div className="abc col-md-12"><i>
-                    {(ans_correct == false)?((this.state.answersubmitted)?"("+this.state.ans_description[i]+")":""):''}
+                        {(ans_correct == false)?((this.state.answersubmitted)?"("+this.state.ans_description[i]+")":""):''}
                     </i>{/*</div>*/}
                     </div>
                 </div>
@@ -417,13 +416,13 @@ export default class Enter_daily extends Component {
             <h2>{this.state.info}</h2>
 
 
-                <div className="footer"> <h2 className="footer-text">
-                    You are at the end....Please review before submitting...
-                </h2>
-                    <br/>
-                    <br/>
-                    <button onClick={this.submit} className="">SUBMIT</button>
-                </div>
+            <div className="footer"> <h2 className="footer-text">
+                You are at the end....Please review before submitting...
+            </h2>
+                <br/>
+                <br/>
+                <button onClick={this.submit} className="">SUBMIT</button>
+            </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -434,7 +433,7 @@ export default class Enter_daily extends Component {
             <br/>
             <br/>
             <br/>
-            </div>
+        </div>
 
 
     }
