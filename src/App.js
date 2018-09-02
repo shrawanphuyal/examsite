@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Sidenav from './Component/Sidenav/Sidenav';
-import Topnav from "./Component/Navbar/Topnav";
 import TopnavFinal from "./Component/Navbar/TopnavFinal";
-import TopnavInactiveUser from "./Component/Navbar/TopnavInactiveUser";
+
 
 import {HashRouter as Router,Route, Redirect, Link} from 'react-router-dom';
 
@@ -40,10 +39,11 @@ import ExammoduleSolArch from "./Component/Exammode/Modules/ExammoduleSolArch";
 
 import Register from "./Component/Homepage/Register";
 import AdminDashboard from "./Component/Admin/AdminDashboard";
-import AdminLogin from "./Component/Admin/AdminLogin";
-import UploadQuestion from "./Component/Admin/UploadQuestion";
+import UploadQuestionDevOps from "./Component/Admin/UploadQuestionDevOps";
+import UploadQuestionSysOps from "./Component/Admin/UploadQuestionSysOps";
+import UploadQuestionSolArch from "./Component/Admin/UploadQuestionSolArch";
+import Modules from "./Component/Admin/Modules";
 
-import Admin from './Component/test/Admin2'
 
 const PrivateRoute = ({component: Component, ...rest}) => (
     <Route {...rest} render = {(props) => (
@@ -68,8 +68,8 @@ class App extends Component {
                         <Route exact path="/login" component={Login}/>
                         <Route exact path="/changepwd" component={ChangePwdHome}/>
                         <PrivateRoute exact path = "/loggedin" component={LoggedinHome}/>
-                        {/*<PrivateRoute exact path = "#" component = {Topnav}/>*/}
-                        {/*<PrivateRoute exact path = "#" component = {Sidenav}/>*/}
+
+
                         {/*TestMode/Modules/*/}
                         <PrivateRoute exact path="/testmode/DevOps" component={Testmodule}/>
                         <PrivateRoute exact path="/testmode/SysOps" component={TestmoduleSolArch}/>
@@ -97,9 +97,11 @@ class App extends Component {
                         <Route exact path="/Register" component={Register}/>
 
                         <PrivateRoute exact path="/Admin/AdminDashboard" component={AdminDashboard}/>
-                        <PrivateRoute exact path="/Admin/AdminDashboard/UploadQuest" component={UploadQuestion}/>
+                        <PrivateRoute exact path="/Admin/AdminDashboard/UploadQuest" component={Modules}/>
+                        <PrivateRoute exact path="/Admin/AdminDashboard/UploadQuest/DevOps" component={UploadQuestionDevOps}/>
+                        <PrivateRoute exact path="/Admin/AdminDashboard/UploadQuest/SysOps" component={UploadQuestionSysOps}/>
+                        <PrivateRoute exact path="/Admin/AdminDashboard/UploadQuest/SolArch" component={UploadQuestionSolArch}/>
 
-                        <Route exact path="/Admin/AdminLogin" component={AdminLogin}/>
                     </div>
 
 

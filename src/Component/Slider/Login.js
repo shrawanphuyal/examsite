@@ -181,6 +181,7 @@ class Login extends Component{
         event.preventDefault();
        // sweetAlert("Logging in... please wait!!!")
         localStorage.setItem("admin", "true");
+
         this.setState({
             info: "Logging in..Please Wait!!"
         });

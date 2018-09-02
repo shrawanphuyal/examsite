@@ -26,7 +26,9 @@ export default class Test extends Component {
             answer_description:[],
             correct:false,
             answerSubmitted:false,
-            disabledInfo:''
+            disabledInfo:'',
+            ans_length:[],
+            selectedRadio:{}
         };
         this.handlePageNumClick = this.handlePageNumClick.bind(this);
     }
@@ -135,6 +137,48 @@ export default class Test extends Component {
         }
 
     }
+    onRadio(i,e) {
+
+        var val = e.target.value;
+        var list=this.state.selectedRadio
+        list[i]=val
+        this.setState({
+            selectedRadio:list
+        });
+        //console.log(this.state.selectedRadio)
+        const user_answers = this.state.user_answers
+        const previousPages = this.state.previousPages
+        let index, index1
+        if(e.target.checked) {
+
+            if (this.state.user_answers.length == 0) {
+                user_answers.push(+e.target.value)
+                previousPages.push(this.state.currentPage)
+            }
+            else {
+
+
+                index = user_answers.indexOf(+e.target.value);
+                user_answers.splice(index, 1);
+
+                index1 = previousPages.indexOf(this.state.currentPage);
+                previousPages.splice(index1, 1)
+
+                user_answers.push(+e.target.value)
+                previousPages.push(this.state.currentPage)
+
+
+            }
+        }
+
+        this.setState({
+            user_answers: user_answers,
+            previousPages: previousPages
+        })
+        console.log(this.state.user_answers)
+
+
+    }
 
     componentDidMount()
     {
@@ -152,9 +196,16 @@ export default class Test extends Component {
             }
         })
             .then(response => {
+
+                var ans_length = [];
+                for(var i=0;i<response.data["resDynamo"].length;i++){
+                    ans_length[i] = response.data["ansDynamo"][""+(i+1)].length
+                }
+
                 this.setState({
                     fetched_data: response.data["resDynamo"],
-                    correct_answer:response.data["ansDynamo"]
+                    correct_answer:response.data["ansDynamo"],
+                    ans_length: ans_length
                 })
             })
             .catch(error => {
@@ -221,9 +272,10 @@ export default class Test extends Component {
 
     }
     nextButton(cur, event){
-        console.log(event.target.id)
+        //
+        // console.log(event.target.id)
         var a = false;
-        console.log("a"+event.target.id);
+        //console.log("a"+event.target.id);
         for(var l =0;l<this.state.previousPages.length;l++){
             if((cur+1) == this.state.previousPages[l]){
                 a = true;
@@ -233,7 +285,7 @@ export default class Test extends Component {
             this.setState({disabled:true, disabledInfo:"( you have already done this quesiton )"})
         }
         else{
-            console.log("we are outside disabled")
+            //console.log("we are outside disabled")
             this.setState({disabled:false, disabledInfo:''})
         }
         var a = this.state.currentPage+1;
@@ -283,7 +335,7 @@ export default class Test extends Component {
         });
     }
     previousButton(cur,event){
-        console.log(cur);
+        //console.log(cur);
         var a = false;
         for(var l =0;l<this.state.previousPages.length;l++){
             if((cur-1) == this.state.previousPages[l]){
@@ -389,7 +441,6 @@ export default class Test extends Component {
 
 
     render() {
-        //console.log(this.state.previousPages);
         this.state.answer= new Array();
         for(var l = 0; l<this.state.fetched_data.length;l++)
         {
@@ -420,8 +471,17 @@ export default class Test extends Component {
             }
         }
 
+
+        var singleChoice = false
+
         // display questions
         const renderquestion = currentquestion.map((todo, index) => {
+            if(this.state.ans_length[this.state.currentPage-1] == 1){
+                singleChoice = true;
+            }
+            else{
+                singleChoice = false;
+            }
             return <div>
                 <p className="renderQuestion" key={index}>{this.state.currentPage}. {todo}</p>
             </div>;
@@ -451,19 +511,40 @@ export default class Test extends Component {
                 }
             }
 
+            if(singleChoice){
+                var curPage = this.state.currentPage-1;
 
-            return <div>
+                //console.log(this.state.selectedRadio[curPage]);
+                //console.log((index+1));
+                return <div>
 
-                <p className={(correct)?'greenColor':(user_ans_correct)?'redColor':'ansColor'}  key={index}>
-                    <input
-                        name="ans"
-                        value={index+1}
-                        type="checkbox"
-                        disabled={this.state.disabled}
-                        onChange={this.onChange.bind(this)} /> &nbsp;
-                    {todo}
-                </p>
-            </div>;
+                    <p className={(correct)?'greenColor':(user_ans_correct)?'redColor':'ansColor'}  key={index}>
+                        <input
+                            name="ans"
+                            checked={this.state.selectedRadio[curPage] == (index+1)}
+                            value={index+1}
+                            type="radio"
+                            disabled={this.state.disabled}
+                            onChange={this.onRadio.bind(this,curPage)} /> &nbsp;
+                        {todo}
+                    </p>
+                </div>;
+            }
+            else{
+                return <div>
+
+                    <p className={(correct)?'greenColor':(user_ans_correct)?'redColor':'ansColor'}  key={index}>
+                        <input
+                            name="ans"
+                            value={index+1}
+                            type="checkbox"
+                            disabled={this.state.disabled}
+                            onChange={this.onChange.bind(this)} /> &nbsp;
+                        {todo}
+                    </p>
+                </div>;
+            }
+
         });
 
         // Logic for displaying page numbers

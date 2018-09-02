@@ -103,7 +103,7 @@ export default class Enter_daily extends Component {
         this.setState({
             selectedRadio:list
         });
-        // console.log(this.state.selectedRadio)
+        //console.log(this.state.selectedRadio)
 
         // current array of user_answer
 
@@ -141,7 +141,7 @@ export default class Enter_daily extends Component {
 
         // update the state with the new array of user_answer
         this.setState({ user_answer: user_answer1 })
-        // console.log(this.state.user_answer)
+         console.log(this.state.user_answer)
 
     }
     onChange(i, e) {
@@ -264,7 +264,9 @@ export default class Enter_daily extends Component {
             let click=this.handleCheck.bind(this, i)
             for(var j=0;j<answer[i].length;j++){
                 var val1 = j+1;
+                //console.log(i);
                 if(this.state.answersubmitted){
+
                     if(this.state.ans_length[i] == 1){
                         // console.log("single choice");
                         var correct=false;

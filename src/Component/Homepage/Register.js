@@ -82,6 +82,7 @@ export default class Register extends Component{
 
             this.signUpUser(user)
                 .then(({email})=>{
+                    return (<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />)
                     sweetAlert("Successfully registered...Verify your email and Login");
                     console.log("done signing up")
                     this.setState({
@@ -147,7 +148,7 @@ export default class Register extends Component{
                     <div className="signup__overlay"></div>
                 </div>
                 <div className="signup ">
-                    <form action="">
+
                         <div className="form-group">
                             <label htmlFor="fullname">Full Name</label>
                             <input className="form-control" type="text" name="fullname" id="fullname"
@@ -183,7 +184,7 @@ export default class Register extends Component{
                                 </li>
                             </ul>
                         </div>
-                    </form>
+
                     <h3>{this.state.info}</h3>
 
                 </div>

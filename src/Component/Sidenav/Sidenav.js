@@ -20,7 +20,7 @@ export default class Sidenav extends Component {
 
     }
     handleMenuHide(){
-        localStorage.setItem("menuHandle","false")
+        document.getElementById("mySidenav").style.width = "0px";
     }
 
     render() {
@@ -46,7 +46,7 @@ export default class Sidenav extends Component {
                                                 <li><a onClick={this.handleMenuHide.bind(this)} href="#testmode/DevOps">Test mode</a>
                                                     </li>
 
-                                                <li><a href="#Exammode/DevOps">Exam mode</a>
+                                                <li><a onClick={this.handleMenuHide.bind(this)} href="#Exammode/DevOps">Exam mode</a>
                                                 </li>
                                             </ul>
                                     </span>
@@ -54,16 +54,16 @@ export default class Sidenav extends Component {
                                     <span className="dropdown panel-body ">
                                             <a href="#" className="panel-body dropdown-toggle" data-toggle="dropdown">Solution Associate</a>
                                             <ul className="dropdown-menu dropdown-menu-right">
-                                                <li><a href="#testmode/SolArch">Test mode</a></li>
-                                                <li><a href="#Exammode/SolArch">Exam mode</a></li>
+                                                <li><a onClick={this.handleMenuHide.bind(this)} href="#testmode/SolArch">Test mode</a></li>
+                                                <li><a onClick={this.handleMenuHide.bind(this)} href="#Exammode/SolArch">Exam mode</a></li>
                                             </ul>
                                     </span>
                                     {/* dropdown while clicking 3rd*/}
                                     <span className="dropdown panel-body ">
                                         <a href="#" className="panel-body dropdown-toggle" data-toggle="dropdown">Sysops Administrator</a>
                                         <ul className="dropdown-menu dropdown-menu-right">
-                                                <li><a href="#testmode/SysOps">Test mode</a></li>
-                                                <li><a href="#Exammode/SysOps"> Exam mode</a></li>
+                                                <li><a onClick={this.handleMenuHide.bind(this)} href="#testmode/SysOps">Test mode</a></li>
+                                                <li><a onClick={this.handleMenuHide.bind(this)} href="#Exammode/SysOps"> Exam mode</a></li>
                                             </ul>
                                     </span>
                                 </div>
@@ -72,8 +72,8 @@ export default class Sidenav extends Component {
                         <a href="#">Contact</a>
                         </div>
                     </div>
-                  <div className="wrapper wrap" onClick={(localStorage.getItem("MenuOpened")=="true")?this.closeNav.bind(this):""}>
-                  </div>
+                  {/*<div className="wrapper wrap" onClick={(localStorage.getItem("MenuOpened")=="true")?this.closeNav.bind(this):""}>*/}
+                  {/*</div>*/}
 
               </div>
             )

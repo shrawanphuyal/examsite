@@ -140,3 +140,7 @@ button.btn.btn-default.black{
 .bold{
     font-weight: bold;
 }
+.update{
+    height:150px;
+    width:350px;
+}

@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 import sweetAlert from 'sweetalert';
+import './AdminLogin.css'
 var update_status_api = "https://db6rwb94h1.execute-api.ap-southeast-1.amazonaws.com/dev/abc";
 var inviteuser_api = "https://0tbjw0ynvb.execute-api.ap-southeast-1.amazonaws.com/admin_invited/invite-user"
 export default class AdminDashboard extends Component {
