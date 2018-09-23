@@ -2,51 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71d3a17a-5960-4e39-a9a3-609a61252f4f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Admin/Modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Admin/SetDevOps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Admin/SetSolArch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Admin/SetSysOps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.bdec147a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.bdec147a.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.7f89a038.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.7f89a038.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Admin/AdminLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Admin/AdminLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Admin/AdminLogin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Admin/UploadQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Exammode/Exam.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamSolArch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamSolArch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamSysOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamSysOps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Exammode/Sets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Homepage/AdminDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Homepage/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Homepage/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Navbar/Topnav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Navbar/TopnavInactiveUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Sidenav/Sidenav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sidenav/Sidenav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/AuthExample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Slider/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/aws1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/aws3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/aws4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/exam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/exam1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/set1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/website1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/website2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Slider/image/website3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsDynamo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsDynamo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsIAM.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsIAM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsS3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsS3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exam1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.5b3d07fc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.5b3d07fc.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.f4ade3c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.f4ade3c3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/aws.fbbe9e8a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/aws0.a8371b51.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,27 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestDevOpsEC2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3857">
-              <caret line="206" column="37" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDevOpsDynamo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsDynamo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3154">
-              <caret line="225" column="9" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
-              <folding>
-                <element signature="e#1122#2860#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Sidenav.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Sidenav/Sidenav.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +34,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadQuestionDevOps.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UploadQuestionDevOps.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="57" column="10" lean-forward="true" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+            <state relative-caret-position="1026">
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Component/Homepage/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExamDevOps.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="225" column="18" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -134,16 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -159,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>slow</find>
       <find>fullname</find>
       <find>username</find>
       <find>Login</find>
@@ -189,6 +153,7 @@
       <find>openNav</find>
       <find>closeNav</find>
       <find>MenuOpened</find>
+      <find>post</find>
     </findStrings>
     <replaceStrings>
       <replace>.form</replace>
@@ -233,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamSysOps.js" />
         <option value="$PROJECT_DIR$/src/Component/Slider/Login.js" />
         <option value="$PROJECT_DIR$/src/Component/Homepage/Register.js" />
-        <option value="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsDynamo.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsIAM.js" />
@@ -244,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/Modules.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/SetDevOps.js" />
+        <option value="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" />
       </list>
     </option>
   </component>
@@ -367,7 +332,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -432,18 +397,19 @@
       <workItem from="1535699593345" duration="227000" />
       <workItem from="1535706897765" duration="8844000" />
       <workItem from="1535862739770" duration="10868000" />
-      <workItem from="1535880603884" duration="1188000" />
+      <workItem from="1535880603884" duration="2244000" />
+      <workItem from="1537198184906" duration="1367000" />
+      <workItem from="1537675672977" duration="4832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192227000" />
+    <option name="totallyTimeSpent" value="199482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-11" width="1307" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24844237" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.115264796" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -451,7 +417,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19379845" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19379845" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,13 +478,6 @@
     <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Modules/ExammoduleDevOps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Homepage/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Admin/AdminLogin.css">
@@ -594,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5415">
-          <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Homepage/Register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3610">
@@ -610,13 +562,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aws.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="348" column="48" lean-forward="true" selection-start-line="348" selection-start-column="48" selection-end-line="348" selection-end-column="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Testmode/Questions/TestSolutionArch.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -657,23 +602,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3154">
           <caret line="225" column="9" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
-          <folding>
-            <element signature="e#1122#2860#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -709,8 +651,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="57" column="10" lean-forward="true" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+        <state relative-caret-position="1026">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Homepage/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="225" column="18" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="18" />
         </state>
       </provider>
     </entry>
