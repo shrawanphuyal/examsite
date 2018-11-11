@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71d3a17a-5960-4e39-a9a3-609a61252f4f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.5b3d07fc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.5b3d07fc.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.f4ade3c3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.f4ade3c3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/aws.fbbe9e8a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/aws0.a8371b51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sidenav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Sidenav/Sidenav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UploadQuestionDevOps.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +40,7 @@
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="5415">
               <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
@@ -64,11 +49,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamDevOps.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExamDevOps.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="225" column="18" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="18" />
+            <state relative-caret-position="271">
+              <caret line="485" column="37" selection-start-line="485" selection-start-column="32" selection-end-line="485" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="686" column="20" selection-start-line="686" selection-start-column="20" selection-end-line="686" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="86" column="59" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -104,15 +110,6 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="TopnavFinal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -124,14 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fullname</find>
-      <find>username</find>
-      <find>Login</find>
-      <find>setItem</find>
-      <find>lastname</find>
-      <find>h1</find>
-      <find>mainbox</find>
-      <find>sig</find>
       <find>sign</find>
       <find>Menu</find>
       <find>Upload</find>
@@ -154,6 +143,14 @@
       <find>closeNav</find>
       <find>MenuOpened</find>
       <find>post</find>
+      <find>timer</find>
+      <find>confirm</find>
+      <find>this.seconds</find>
+      <find>this.second</find>
+      <find>this.state.second</find>
+      <find>submit</find>
+      <find>this.state</find>
+      <find>bottom-header</find>
     </findStrings>
     <replaceStrings>
       <replace>.form</replace>
@@ -186,11 +183,9 @@
         <option value="$PROJECT_DIR$/src/Component/Homepage/AdminDashboard.js" />
         <option value="$PROJECT_DIR$/src/Component/test/NewLogin.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Modules/Testmodule.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestion.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/AdminLogin.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestionSolArch.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestionSysOps.js" />
@@ -208,7 +203,9 @@
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/Modules.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/SetDevOps.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
       </list>
     </option>
   </component>
@@ -251,77 +248,6 @@
               <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="examsite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Exammode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Exammode" type="462c0819:PsiDirectoryNode" />
-              <item name="Questions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Homepage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Sidenav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Testmode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Testmode" type="462c0819:PsiDirectoryNode" />
-              <item name="Questions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,27 +325,29 @@
       <workItem from="1535862739770" duration="10868000" />
       <workItem from="1535880603884" duration="2244000" />
       <workItem from="1537198184906" duration="1367000" />
-      <workItem from="1537675672977" duration="4832000" />
+      <workItem from="1537675672977" duration="5256000" />
+      <workItem from="1541913723242" duration="2907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199482000" />
+    <option name="totallyTimeSpent" value="202813000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="-11" width="1307" height="780" extended-state="6" />
+    <frame x="61" y="-4" width="1305" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.115264796" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20560747" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19379845" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.20259319" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -445,13 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12882">
-          <caret line="678" column="7" selection-start-line="678" selection-start-column="7" selection-end-line="678" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -605,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -665,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="5415">
           <caret line="289" column="53" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
@@ -673,10 +587,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="86" column="59" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="225" column="18" selection-start-line="225" selection-start-column="14" selection-end-line="225" selection-end-column="18" />
+        <state relative-caret-position="271">
+          <caret line="485" column="37" selection-start-line="485" selection-start-column="32" selection-end-line="485" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="686" column="20" selection-start-line="686" selection-start-column="20" selection-end-line="686" selection-end-column="20" />
         </state>
       </provider>
     </entry>

@@ -84,7 +84,7 @@ class App extends Component {
                         <PrivateRoute exact path="/testmode/SolArch/EC2" component={TestSolArch}/>
 
                         {/*ExamMode/Modules/*/}
-                        <PrivateRoute exact path="/Exammode/DevOps" component={ExammoduleDevOps}/>
+                        <Route exact path="/Exammode/DevOps" component={ExammoduleDevOps}/>
                         <PrivateRoute exact path="/Exammode/SysOps" component={ExammoduleSysOps}/>
                         <PrivateRoute exact path="/Exammode/SolArch" component={ExammoduleSolArch}/>
 

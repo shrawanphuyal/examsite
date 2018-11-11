@@ -6,9 +6,19 @@ import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
 var api_devOps = "https://mqtnyvj2kb.execute-api.ap-southeast-1.amazonaws.com/devops_question/devops-question-post"
 // var get_api = "https://0mbjzz7yd9.execute-api.us-east-1.amazonaws.com/exam-backend/examsite-backend"
+
+class Timer extends Component {
+    render() {
+        return (
+            <div>
+                <h1 style={{ fontSize: 30, marginLeft:10 }}>{this.props.value}:{this.props.seconds}</h1>
+            </div>
+        );
+    }
+}
 export default class Enter_daily extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             fetched_data:[],
             ans_length:[],
@@ -25,12 +35,52 @@ export default class Enter_daily extends Component {
             checkAgainIndex:[],
             answer_color:'',
             answersubmitted:false,
-            correct_answer_index:[]
+            correct_answer_index:[],
 
+            seconds: '00',
+            value: '01'
         };
         this.handleCheck=this.handleCheck.bind(this)
+        this.startCountDown = this.startCountDown.bind(this);
+        this.tick = this.tick.bind(this);
+    }
+    tick() {
+        var min = Math.floor(this.secondsRemaining / 60);
+        var sec = this.secondsRemaining - (min * 60);
+
+        this.setState({
+            value: min,
+            seconds: sec,
+        })
+
+        if (sec < 10) {
+            this.setState({
+                seconds: "0" + this.state.seconds,
+            })
+
+        }
+
+        if (min < 10) {
+            this.setState({
+                value: "0" + min,
+            })
+
+        }
+
+        if (min === 0 & sec === 0) {
+            clearInterval(this.intervalHandle);
+        }
+
+
+        this.secondsRemaining--
     }
 
+    startCountDown() {
+        this.intervalHandle = setInterval(this.tick, 1000);
+        let time = this.state.value;
+        this.secondsRemaining = time * 60;
+
+    }
     handleCheck(i, event){
         event.preventDefault()
         var list=this.state.check
@@ -43,6 +93,7 @@ export default class Enter_daily extends Component {
         var size = Object.keys(this.state.user_answer).length;
 
         // console.log(this.state.user_answer.length);
+
         confirmAlert({
             title: '',
             message: (size==0)?"You haven't done any questions. Are you sure want to do this ?"
@@ -62,7 +113,7 @@ export default class Enter_daily extends Component {
     };
 
     handleSubmit = event => {
-        event.preventDefault();
+        // event.preventDefault();
         this.setState({
             info:"Please Wait..."
         })
@@ -94,6 +145,7 @@ export default class Enter_daily extends Component {
     componentDidMount()
     {
         this.fetchdata()
+        this.startCountDown()
     }
     handleRadio(i, e){
 
@@ -241,6 +293,8 @@ export default class Enter_daily extends Component {
             });
     }
     render(){
+
+
         // console.log(this.state.checkAgainIndex)
         var question = [];
         var answer = new Array();
@@ -411,9 +465,25 @@ export default class Enter_daily extends Component {
                 </div>
             )
         }
-
+        if(this.state.value ==='00' && this.state.seconds ==='00')
+        {
+            confirmAlert({
+                title: 'Time has Finished',
+                message: 'Click Yes to Submit',
+                buttons: [
+                    {
+                        label: 'Yes',
+                        onClick: () => this.handleSubmit(this)
+                    },
+                    {
+                        label: 'No',
+                        onClick: () => ""
+                    }
+                ]
+            })
+        }
         return <div className="bottom-header">
-
+                <div className="timer"><Timer value={this.state.value} seconds={this.state.seconds} /></div>
             {list}
             <h2>{this.state.info}</h2>
 
@@ -424,6 +494,7 @@ export default class Enter_daily extends Component {
                 <br/>
                 <br/>
                 <button onClick={this.submit} className="">SUBMIT</button>
+                <br/>
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
