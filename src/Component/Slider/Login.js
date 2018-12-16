@@ -180,15 +180,15 @@ class Login extends Component{
     handleSubmit(event){
         event.preventDefault();
        // sweetAlert("Logging in... please wait!!!")
-        localStorage.setItem("admin", "true");
 
+        console.log(this.state.users)
         this.setState({
             info: "Logging in..Please Wait!!"
         });
         for(var i =0;i<this.state.admins.length;i++)
         {
            var user = document.getElementById("username").value;
-            if(this.state.admins[i] === user)
+            if(this.state.admins[i]["username"] === user)
             {
                 //admin
                 this.signInAdmin({
@@ -196,11 +196,10 @@ class Login extends Component{
                     password: this.state.password
                 })
                     .then(({result})=>{
-
-                        localStorage.setItem("admin", "true");
-
                         localStorage.setItem("adminname", this.state.username)
+                        localStorage.setItem("loggedin", "true")
                         console.log("done signing in")
+                        localStorage.setItem("admin", "true");
                         this.setState({
                             info: "Successfully Signed In..Please Wait"
                         });
@@ -228,7 +227,6 @@ class Login extends Component{
                 })
                     .then(({result})=>{
 
-
                         for(var i =0;i<this.state.users.length;i++){
                             if(this.state.users[i]["username"] == this.state.username && this.state.users[i]["status"] == "active"){
                                 localStorage.setItem("activeUser","true");
@@ -240,6 +238,7 @@ class Login extends Component{
 
                         }
                         localStorage.setItem("adminname", this.state.username)
+                        localStorage.setItem("loggedin", "true")
                         console.log("done signing in")
                         this.setState({
                             info: "Successfully Signed In..Please Wait"

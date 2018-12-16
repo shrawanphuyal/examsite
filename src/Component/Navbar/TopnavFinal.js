@@ -14,6 +14,7 @@ export default class Topnav extends Component{
     }
     signOut(){
         localStorage.setItem("admin", "false");
+        localStorage.setItem("loggedin", "false")
         sweetAlert("Thanks for using our system....")
     }
     openNav()
@@ -38,13 +39,18 @@ export default class Topnav extends Component{
     }
 
     render(){
-
         return(
             <nav className="navbar navbar-inverse navbar-fixed-top">
                 <div className="container-fluid">
                     <div >
                         {
-                            ((localStorage.getItem('admin') === "true") &&(localStorage.getItem('activeUser') === "true"))?
+                            (localStorage.getItem('loggedin') === "false")?
+                                <nav className="navbar navbar-inverse navbar-fixed-top text">
+                                    <h1 className="welcome">WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>
+
+                                </nav>
+
+                                :((localStorage.getItem('loggedin') === "true")&&(localStorage.getItem('admin') === "true"))?
                                 <div className="row">
 
                                     <div className="col-md-5 col-lg-8">
@@ -55,8 +61,19 @@ export default class Topnav extends Component{
                                         <a onClick={this.signOut} className="navbar-brand glyphicon  glyphicon-log-out" href="">Signout</a></div>
 
                                 </div>
+                                :((localStorage.getItem('loggedin') === "true")&&(localStorage.getItem('activeUser') === "true"))?
+                                    <div className="row">
+
+                                        <div className="col-md-5 col-lg-8">
+                                            <a className="navbar-brand cursor glyphicon glyphicon-menu-hamburger"
+                                               onClick={(this.state.MenuOpened)?this.openNav.bind(this):this.closeNav.bind(this)}>
+                                                Menu</a></div>
+                                        <div className="col-xs-6 col-md-2 pull-right">
+                                            <a onClick={this.signOut} className="navbar-brand glyphicon  glyphicon-log-out" href="">Signout</a></div>
+
+                                    </div>
                                 :
-                                ((localStorage.getItem('admin') === "true") && (localStorage.getItem('activeUser') === "false"))?
+                                ((localStorage.getItem('loggedin') === "true")&&(localStorage.getItem('activeUser') === "false"))?
                                     <div className="row">
 
                                         <div className="col-md-2 col-lg-2">
@@ -73,7 +90,8 @@ export default class Topnav extends Component{
 
                                     </div>:
                                     <nav className="navbar navbar-inverse navbar-fixed-top text">
-
+                                        <div className="col-xs-6 col-md-2 pull-right">
+                                            <a onClick={this.signOut} className="navbar-brand glyphicon  glyphicon-log-out" href="">Signout</a></div>
                                         <h1 className="welcome">WELCOME TO AWS EXAM PORTAL!!! LOGIN IS REQUIRED TO VIEW RESOURCES</h1>
 
                                     </nav>

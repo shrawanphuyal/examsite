@@ -97,10 +97,10 @@ export default class AdminDashboard extends Component {
             status:"active"
         };
 
-
         axios.post(update_status_api, { user: user})
             .then(res => {
                 sweetAlert("User status is successfully changed");
+                window.location.reload()
 
             })
     }
@@ -112,17 +112,16 @@ export default class AdminDashboard extends Component {
             status:"inactive"
         };
 
-
         axios.post(update_status_api, { user: user})
             .then(res => {
                 sweetAlert("User status is successfully changed");
+                window.location.reload()
 
             })
     }
     render() {
         return (
             <div className="admin">
-                a
                 <div className="row margin-top">
                     <div className="usertable">
                         <div className="col-md-8">

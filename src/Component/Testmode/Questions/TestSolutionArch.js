@@ -4,7 +4,7 @@ import '../../../App.css';
 import sweetAlert from "sweetalert";
 
 
-var post_api = "https://ds8xbume54.execute-api.ap-southeast-1.amazonaws.com/questionnare_SolnArch_test/questionare-test-solarch";
+var post_api = "https://ds8xbume54.execute-api.ap-southeast-1.amazonaws.com/prod/questionare-test-solarch";
 var get_api = "https://ujai96180i.execute-api.us-east-1.amazonaws.com/web-exam/exam-web";
 export default class Test extends Component {
     constructor() {
