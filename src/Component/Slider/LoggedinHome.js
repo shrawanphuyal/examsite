@@ -120,7 +120,7 @@ export default class LoggedinHome extends Component{
                     info: "Successfully Signed In..Please Wait"
                 });
                 setTimeout(() => {
-                    // this.props.history.push('/testmode/DevOps');
+                    this.props.history.push('/loggedinhome');
                 }, 100);
 
             })

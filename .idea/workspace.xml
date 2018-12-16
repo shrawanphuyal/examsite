@@ -6,20 +6,12 @@
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.5b3d07fc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.5b3d07fc.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.8ad4bcc5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.8ad4bcc5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.5e4d9817.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.5e4d9817.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3upload.sh" beforeDir="false" afterPath="$PROJECT_DIR$/s3upload.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Slider/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Slider/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsDynamo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsDynamo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsIAM.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsIAM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsS3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsS3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestSolutionArch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestSolutionArch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestSysOps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Testmode/Questions/TestSysOps.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,22 +25,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sidenav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Sidenav/Sidenav.js">
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminDashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
-              <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="543">
+              <caret line="246" column="47" selection-start-line="246" selection-start-column="47" selection-end-line="246" selection-end-column="47" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,6 +58,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="49" column="84" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="84" />
+              <folding>
+                <element signature="e#783#850#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoggedinHome.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="122" column="58" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TestDevOpsS3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsS3.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestDevOpsSQS.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestDevOpsSQS.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+            <state relative-caret-position="304">
+              <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -123,18 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamDevOps.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -146,8 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>loggi</find>
-      <find>a</find>
       <find>selectedRadio</find>
       <find>disabled</find>
       <find>console</find>
@@ -176,6 +166,8 @@
       <find>update_status_api</find>
       <find>post_api</find>
       <find>axios</find>
+      <find>LoggedinHome</find>
+      <find>history</find>
     </findStrings>
     <replaceStrings>
       <replace>.form</replace>
@@ -208,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/Component/Homepage/AdminDashboard.js" />
         <option value="$PROJECT_DIR$/src/Component/test/NewLogin.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Modules/Testmodule.js" />
-        <option value="$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestion.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/AdminLogin.css" />
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestionSolArch.js" />
@@ -220,10 +211,8 @@
         <option value="$PROJECT_DIR$/src/Component/Admin/UploadQuestionDevOps.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/Modules.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/SetDevOps.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Component/Exammode/Questions/ExamDevOps.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/Component/Slider/Login.js" />
         <option value="$PROJECT_DIR$/src/Component/Navbar/TopnavFinal.js" />
         <option value="$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsEC2.js" />
@@ -233,6 +222,9 @@
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsIAM.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsS3.js" />
         <option value="$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js" />
+        <option value="$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js" />
+        <option value="$PROJECT_DIR$/src/Component/Slider/Login.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -281,6 +273,20 @@
               <item name="examsite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="examsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Component" type="462c0819:PsiDirectoryNode" />
+              <item name="Slider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="examsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="examsite" type="b2602c69:ProjectViewProjectNode" />
@@ -375,18 +381,17 @@
       <workItem from="1537198184906" duration="1367000" />
       <workItem from="1537675672977" duration="5256000" />
       <workItem from="1541913723242" duration="3041000" />
-      <workItem from="1544938643269" duration="8275000" />
+      <workItem from="1544938643269" duration="10723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211222000" />
+    <option name="totallyTimeSpent" value="213670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13902053" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13902053" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -394,7 +399,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.13584118" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29153606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -418,13 +423,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2774">
-          <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -549,29 +547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="86" column="59" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="686" column="20" selection-start-line="686" selection-start-column="20" selection-end-line="686" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="199" column="24" selection-start-line="199" selection-start-column="24" selection-end-line="199" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-            <element signature="e#6763#6883#0" />
-            <element signature="e#7476#7724#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,7 +591,7 @@
     <entry file="file://$PROJECT_DIR$/src/Component/Admin/AdminDashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-111">
-          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -669,8 +648,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/Testmode/Questions/TestDevOpsSQS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+        <state relative-caret-position="304">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Slider/LoggedinHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="122" column="58" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/Slider/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="246" column="47" selection-start-line="246" selection-start-column="47" selection-end-line="246" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="49" column="84" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="84" />
+          <folding>
+            <element signature="e#783#850#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

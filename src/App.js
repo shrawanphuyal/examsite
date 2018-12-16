@@ -47,7 +47,7 @@ import Modules from "./Component/Admin/Modules";
 
 const PrivateRoute = ({component: Component, ...rest}) => (
     <Route {...rest} render = {(props) => (
-        localStorage.getItem('admin') === "true"
+        localStorage.getItem('admin') === "true" || localStorage.getItem('activeUser') === "true"
             ? <Component {...props}/>
             : <Redirect to='/login'/>
     )}/>
@@ -67,7 +67,7 @@ class App extends Component {
 
                         <Route exact path="/login" component={Login}/>
                         <Route exact path="/changepwd" component={ChangePwdHome}/>
-                        <PrivateRoute exact path = "/loggedin" component={LoggedinHome}/>
+                        <PrivateRoute exact path = "/loggedinhome" component={LoggedinHome}/>
 
 
                         {/*TestMode/Modules/*/}

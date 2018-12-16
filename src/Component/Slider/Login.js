@@ -244,7 +244,7 @@ class Login extends Component{
                             info: "Successfully Signed In..Please Wait"
                         });
                         setTimeout(() => {
-                            this.props.history.push('/loggedin');
+                            this.props.history.push('/loggedinhome');
                         }, 100);
 
                     })
